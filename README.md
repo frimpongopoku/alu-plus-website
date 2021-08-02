@@ -1,5 +1,5 @@
 ### IP 1 Website - School Website remake 
-<b>Made with :love: by Frimpong Opoku Agyemang, Obumneme Jefferey, Alex Miseda, Stanley Olajide Adjao </b>
+<b>Made with :heart: by Frimpong Opoku Agyemang, Obumneme Jefferey, Alex Miseda, Stanley Olajide Adjao </b>
 
 ## Contributors 
 - Alex Miseda 
