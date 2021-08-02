@@ -9,6 +9,61 @@
   /* margin-top: -80px; */
 }
 
+#subscribe-button {
+  padding: 12px 20px;
+  background: var(--app-theme-blue);
+  color: white;
+  width: 100%;
+  margin-top: 10px;
+  border: 0;
+}
+
+#subscribe-button:focus {
+  outline: 0;
+}
+
+#subscribe-button:hover {
+  background: var(--app-theme-maroon-deep);
+  /* box-shadow: var(--elevate-1); */
+  transition: 0.2s ease-out;
+}
+
+#subscribe-button:active {
+  background: var(--app-theme-maroon);
+  border: solid 1px white;
+  transition: 0.2s ease-out;
+}
+.textbox {
+  padding: 10px 15px;
+  background: transparent;
+  /* border: solid 4px var(--app-theme-maroon); */
+  border: solid 2px #ffffff38;
+  width: 100%;
+  color: white;
+}
+
+.textbox::placeholder {
+  color: whitesmoke;
+}
+
+.textbox:focus {
+  outline: 0;
+}
+.subscription-area p {
+  color: white;
+}
+.footer-icon {
+  font-size: 1.5rem;
+  color: white;
+  margin: 20px 15px;
+  cursor: pointer;
+}
+
+.footer-icon :hover {
+  color: orange;
+  transition: 0.3s ease-out;
+}
+
 .footer-container {
   background: var(--app-theme-maroon);
   height: 500px;
@@ -21,7 +76,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 0;
+  bottom: -40px;
   left: 0;
   width: 100%;
   padding: 20px;
@@ -36,10 +91,21 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
+  padding: 25px 10px;
 }
 
 .footer-column {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+}
+
+.footer-about-us {
+  color: whitesmoke;
+  text-align: justify;
+}
+.footer-column-title {
+  width: 100%;
+  color: white;
 }
