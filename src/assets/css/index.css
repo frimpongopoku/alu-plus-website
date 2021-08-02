@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Google+Sans:200,300,400,400i,500,600,700,900");
+@import url("./bootstrap.min.css");
+
+:root {
+  --default-font-family: "Google Sans", sans-serif;
+}
+
+html {
+  font-family: var(--default-font-family);
+  font-family: 400;
+}
