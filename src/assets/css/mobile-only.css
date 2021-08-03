@@ -1,0 +1,32 @@
+@media only screen and (max-width: 767px) {
+  .vanish-on-phone {
+    display: none !important;
+  }
+
+  .footer-bottom-panel {
+    bottom: -70px;
+  }
+
+  .footer-bottom-panel p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .row {
+    margin: 0px !important;
+  }
+
+  .footer-link {
+    display: inline;
+    margin-right: 4px;
+    font-size: 0.8rem;
+  }
+
+  .footer-column-title {
+    font-size: 0.9rem;
+  }
+
+  .footer-container {
+    height: 600px;
+  }
+}

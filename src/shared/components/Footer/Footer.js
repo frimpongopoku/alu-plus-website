@@ -8,11 +8,37 @@ import {
   faLinkedinIn,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import {
+  faCaretRight,
+  faMapMarkerAlt,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
+import { QUICK_LINKS } from "./values";
 export default class Footer extends Component {
   render() {
     return (
       <div className="footer-container">
         <div className="row" style={{ height: "100%" }}>
+          <div
+            className="col-md-3 footer-column vanish-on-pc"
+            style={{
+              justifyContent: "center",
+              display: "flex",
+              alignItems: "flex-start",
+            }}
+          >
+            <div className="footer-content-wrapper">
+              <h4 className="footer-column-title">QUICK LINKS</h4>
+
+              <div style={{ width: "100%" }}>
+                {QUICK_LINKS.map((link) => (
+                  <a href={link.url} className="footer-link">
+                    <FontAwesomeIcon icon={faCaretRight} /> {link.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
           <div
             className="col-md-3 footer-column"
             style={{
@@ -49,7 +75,7 @@ export default class Footer extends Component {
 
           {/* ----------------- ABOUT US AREA -------------- */}
           <div
-            className="col-md-3 footer-column"
+            className="col-md-3 footer-column vanish-on-phone "
             style={{
               justifyContent: "center",
               display: "flex",
@@ -75,10 +101,9 @@ export default class Footer extends Component {
             </div>
           </div>
 
-
           {/* ------------------ QUICK LINKS ----------- */}
           <div
-            className="col-md-3 footer-column"
+            className="col-md-3 footer-column vanish-on-phone"
             style={{
               justifyContent: "center",
               display: "flex",
@@ -87,7 +112,107 @@ export default class Footer extends Component {
           >
             <div className="footer-content-wrapper">
               <h4 className="footer-column-title">QUICK LINKS</h4>
-              
+
+              <div style={{ width: "100%" }}>
+                {QUICK_LINKS.map((link) => (
+                  <a href={link.url} className="footer-link">
+                    <FontAwesomeIcon icon={faCaretRight} /> {link.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* ----------------- ADDRESS AREA ------------- */}
+          <div
+            className="col-md-3 footer-column vanish-on-phone"
+            style={{
+              justifyContent: "center",
+              display: "flex",
+              alignItems: "flex-start",
+            }}
+          >
+            <div className="footer-content-wrapper">
+              <h4 className="footer-column-title">ADDRESSES</h4>
+
+              <div style={{ width: "100%" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    flex: 10,
+                    alignItems: "flex-start",
+                  }}
+                >
+                  <FontAwesomeIcon
+                    icon={faMapMarkerAlt}
+                    style={{ marginRight: 6, color: "#F6BCBC" }}
+                  />
+                  <div className="footer-add">
+                    <h6>ALC Mauritius</h6>
+                    <h6>African Leadership Campus</h6>
+                    <p>
+                      Powder Mill Rd,
+                      <br />
+                      Pamplemousses, 21001 <br />
+                      Mauritius
+                    </p>
+                  </div>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    flex: 10,
+                    alignItems: "flex-start",
+                  }}
+                >
+                  <FontAwesomeIcon
+                    icon={faMapMarkerAlt}
+                    style={{ marginRight: 6, color: "#F6BCBC" }}
+                  />
+                  <div className="footer-add">
+                    <h6>ALU Rwanda</h6>
+                    <h6>African Leadership University</h6>
+                    <p>
+                      Bombogo,
+                      <br />
+                      Kigali Innovation City
+                      <br />
+                      Next to Azam
+                    </p>
+                  </div>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    flex: 10,
+                    alignItems: "flex-start",
+                  }}
+                >
+                  <FontAwesomeIcon
+                    icon={faPhone}
+                    style={{ marginRight: 6, color: "#F6BCBC" }}
+                  />
+                  <div className="footer-add">
+                    <h6>Front Desk</h6>
+
+                    <p>
+                      <span style={{ color: "#ffb3b3" }}>
+                        <b>Rwanda:</b>
+                      </span>{" "}
+                      +250 784 650 219,
+                      <br />
+                      <span style={{ color: "#ffb3b3" }}>
+                        <b>Mauritius:</b>
+                      </span>{" "}
+                      +230 53 43 49 51,
+                      <br />
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

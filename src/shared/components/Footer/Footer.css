@@ -89,7 +89,7 @@
 }
 .footer-content-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
   padding: 25px 10px;
@@ -107,5 +107,32 @@
 }
 .footer-column-title {
   width: 100%;
+  color: white;
+}
+
+.footer-link {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+.footer-link:hover {
+  color: orange;
+  transition: 0.2s ease-out;
+}
+
+.footer-link svg {
+  margin-right: 6px;
+}
+
+.footer-add {
+  display: "flex";
+  flex-direction: column;
+}
+
+.footer-add svg,
+.footer-add p,
+.footer-add h6 {
   color: white;
 }

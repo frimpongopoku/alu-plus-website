@@ -2,6 +2,8 @@
 @import url("./bootstrap.min.css");
 @import url("./colors.css");
 @import url("./elevation.css");
+@import url("./mobile-only.css");
+@import url("./pc-only.css");
 :root {
   --default-font-family: "Google Sans", sans-serif;
 }
