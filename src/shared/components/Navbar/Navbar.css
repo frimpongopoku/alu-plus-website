@@ -1,0 +1,112 @@
+@import url("./../../../assets/css/index.css");
+
+.top-nav {
+  display: flex;
+  flex-direction: row-reverse;
+  flex: 10;
+  background: var(--app-theme-maroon);
+  /* padding: 0px 20px */
+}
+
+.right-blue-menu {
+  flex: 7;
+  display: flex;
+  flex-direction: row-reverse;
+  background: var(--app-theme-blue);
+  padding: 7px;
+}
+
+.top-creators {
+  flex: 3;
+}
+
+.top-bar-link {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  margin: 0px 10px;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.top-bar-link:hover {
+  color: orange;
+  transition: 0.2s ease-out;
+}
+
+.real-navbar {
+  display: flex;
+  flex-direction: row;
+  flex: 12;
+  padding: 15px;
+  width: 100%;
+  border: 0;
+}
+
+.nav-logo {
+  flex: 2;
+  height: 80px;
+  width: 80px;
+}
+
+.nav-apply {
+  padding: 30px 50px;
+  color: white;
+  background: var(--app-theme-maroon);
+  border: 0;
+  height: 91px;
+  font-size: 1.4rem;
+  border-radius: 7px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.nav-apply svg {
+  color: white;
+}
+
+.nav-apply:hover {
+  background: var(--app-theme-blue);
+  transition: 0.2s ease-out;
+}
+
+.nav-links-container {
+  display: flex;
+  flex: 8;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-apply:focus {
+  outline: 0;
+}
+
+.nav-apply:hover svg {
+  transform: traslateX(30);
+  transition: 0.2 ease-out;
+}
+
+.menu-item {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-right: 25px;
+  margin-left: 6px;
+  text-decoration: none;
+  color: black;
+  border: solid 4px transparent;
+  /* border-right-width: 4px; */
+  padding-right: 15px;
+}
+
+.menu-item:hover {
+  color: orange;
+  transition: 0.2s ease-out;
+  transform: scale(0.96);
+}
+
+.menu-item:active {
+  color: var(--app-theme-blue);
+  border-bottom-color: var(--app-theme-maroon);
+  transition: 0.2s ease-out;
+}
