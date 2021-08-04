@@ -90,7 +90,12 @@ export default class Navbar extends Component {
                 this.setState({ showBlanket: false, blanketContent: null });
               }}
             ></div>
-            <div className="nav-drop-blanket elevate-float">{<Jsx />}</div>
+            <div className="nav-drop-blanket elevate-float">
+              <div style={{ padding: 20, height: "100%" }}>
+                <h3 className="drop-name">STUDENT LIFE</h3>
+                <div className="student-life-menu-container">{<Jsx />}</div>
+              </div>
+            </div>
           </>
         )}
       </div>

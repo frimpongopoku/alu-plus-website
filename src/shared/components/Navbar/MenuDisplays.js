@@ -2,10 +2,12 @@ import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Component } from "react";
 import MUImage from "./../../../assets/media/alu-mauri.jpeg";
-
+import RWImage from "./../../../assets/media/alu-rwanda.jpeg";
+import { STUDENT_LIFE_LINKS } from "./values";
 export const StudentLife = () => {
   return (
-    <div className="student-life-menu-container">
+    <>
+      {/* --------------- MAURITIUS ----------- */}
       <div className="image-menu-card">
         <img alt="menu-image" src={MUImage} />
         <h6
@@ -30,9 +32,9 @@ export const StudentLife = () => {
           />
         </a>
       </div>
-
+      {/* -------------- RWANDA ------------------ */}
       <div className="image-menu-card">
-        <img alt="menu-image" src={MUImage} />
+        <img alt="menu-image" src={RWImage} />
         <h6
           style={{
             margin: "11px 3px",
@@ -55,6 +57,18 @@ export const StudentLife = () => {
           />
         </a>
       </div>
-    </div>
+
+      <div style={{ display: "flex", flexDirection: "column", height: "70%" }}>
+        {STUDENT_LIFE_LINKS.map((link) => (
+          <a className="student-life-link" href={link.link}>
+            {link.name}
+            <FontAwesomeIcon
+              style={{ marginLeft: 5 }}
+              icon={faLongArrowAltRight}
+            />
+          </a>
+        ))}
+      </div>
+    </>
   );
 };

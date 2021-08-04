@@ -154,7 +154,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  padding: 20px;
+  /* padding: 20px; */
+  height: 100%;
 }
 .image-menu-card {
   margin: 0px 30px;
@@ -181,4 +182,21 @@
   color: var(--app-theme-blue);
   /* font-weight: 600; */
   transition: 0.2s ease-out;
+}
+
+.student-life-link {
+  text-decoration: none;
+  color: var(--app-theme-maroon);
+}
+
+.student-life-link:hover {
+  color: var(--app-theme-blue);
+  transition: 0.2s ease-out;
+}
+
+.drop-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--app-theme-blue);
+  margin-left: 30px;
 }
