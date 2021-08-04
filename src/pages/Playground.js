@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Footer from "../shared/components/Footer/Footer";
 import Navbar from "../shared/components/Navbar/Navbar";
 
 export default class Playground extends Component {

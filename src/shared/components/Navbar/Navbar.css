@@ -89,7 +89,7 @@
 .menu-item {
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-right: 25px;
   margin-left: 6px;
   text-decoration: none;
@@ -108,5 +108,77 @@
 .menu-item:active {
   color: var(--app-theme-blue);
   border-bottom-color: var(--app-theme-maroon);
+  transition: 0.2s ease-out;
+}
+
+.nav-drop-blanket {
+  height: 480px;
+  /* width: 100%; */
+  background: white;
+  position: absolute;
+  top: 158px;
+  transform: translateX(22%);
+  width: 70%;
+  z-index: 10;
+  opacity: 0;
+  animation: load-up;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ghost-curtain {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  opacity: 0;
+  z-index: 4;
+}
+
+@keyframes load-up {
+  from {
+    transform: translate(22%, 80px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(22%, 0px);
+    opacity: 1;
+  }
+}
+
+.student-life-menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 20px;
+}
+.image-menu-card {
+  margin: 0px 30px;
+}
+.image-menu-card img {
+  height: 190px;
+  width: 280px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.image-menu-card p {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #5d5b5b;
+}
+
+.image-menu-card a {
+  text-decoration: none;
+  color: var(--app-theme-maroon);
+}
+
+.image-menu-card a:hover {
+  color: var(--app-theme-blue);
+  /* font-weight: 600; */
   transition: 0.2s ease-out;
 }
