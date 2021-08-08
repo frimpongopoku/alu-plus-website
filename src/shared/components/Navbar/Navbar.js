@@ -40,7 +40,6 @@ export default class Navbar extends Component {
   }
 
   render() {
-    console.log("I am the blanket", this.state);
     const { showBlanket, blanketContent, showPhoneSideBar, showPhoneBlanket } =
       this.state;
     const Jsx = (blanketContent && blanketContent.jsx) || <></>;
@@ -130,6 +129,7 @@ export default class Navbar extends Component {
             />
             {showPhoneBlanket && (
               <MobileBlanket
+                title={this.state.blanketContent?.title}
                 toggled={this.state.showPhoneSideBar}
                 toggleSidebar={(value) => {
                   this.setState({ showPhoneSideBar: value });

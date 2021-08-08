@@ -59,8 +59,12 @@ export const StudentLife = () => {
       </div>
 
       <div className="normal-menu-blanket-column">
-        {STUDENT_LIFE_LINKS.map((link) => (
-          <a className="student-life-link" href={link.link}>
+        {STUDENT_LIFE_LINKS.map((link, index) => (
+          <a
+            key={index.toString()}
+            className="student-life-link"
+            href={link.link}
+          >
             {link.name}
             <FontAwesomeIcon
               style={{ marginLeft: 5 }}
@@ -78,7 +82,9 @@ export const Academics = () => {
     <>
       {ACADEMICS_LINKS.map((list, index) => (
         <div key={index.toString()} className="normal-menu-blanket-column">
-          <p style={{ fontWeight: "500" }}>{list.groupName}</p>
+          <p className="mobile-group-name" style={{ fontWeight: "500" }}>
+            {list.groupName}
+          </p>
           {list.links.map((link, ind) => (
             <a
               className="student-life-link"
@@ -102,7 +108,9 @@ export const AboutUs = () => {
     <>
       {ABOUT_US_LINKS.map((list, index) => (
         <div key={index.toString()} className="normal-menu-blanket-column">
-          <p style={{ fontWeight: "500" }}>{list.groupName}</p>
+          <p className="mobile-group-name" style={{ fontWeight: "500" }}>
+            {list.groupName}
+          </p>
           {list.links.map((link, ind) => (
             <a
               key={ind.toString()}

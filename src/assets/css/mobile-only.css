@@ -33,5 +33,47 @@
   .top-bar-link {
     font-size: 0.6rem !important;
   }
-}
 
+  .mobile-group-name {
+    color: white;
+  }
+
+  .normal-menu-blanket-column {
+    padding: 20px;
+  }
+
+  .student-life-link {
+    color: #e8adbf !important;
+  }
+
+  .drop-name {
+    font-size: 1rem !important;
+    color: #6c849c !important;
+    padding-top: 10px;
+    margin: 0px !important;
+    padding-left: 15px;
+  }
+
+  .image-menu-card img {
+    height: 60px !important;
+    width: 100px !important;
+    /* object-fit: cover; */
+    border-radius: 4px !important;
+  }
+
+  .image-menu-card {
+    margin: 10px 20px !important;
+  }
+
+  .image-menu-card p {
+    color: var(--app-theme-mobile-text-color) !important;
+  }
+
+  .image-menu-card h6 {
+    color: white;
+  }
+
+  .image-menu-card a {
+    color: #6c849c !important;
+  }
+}

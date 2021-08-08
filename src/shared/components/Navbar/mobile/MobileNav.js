@@ -101,16 +101,11 @@ export const MobileSideBar = (props) => {
 };
 
 export const MobileBlanket = (props) => {
-  const { toggled, toggleSidebar } = props;
+  const { toggled, toggleSidebar, title } = props;
   return (
     <div className="mobile-blanket">
-      <div
-        style={{ display: "flex", flexDirection: "column" }}
-        onClick={(e) => {
-          e.preventDefault();
-          toggleSidebar(!toggled);
-        }}
-      >
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <h3 className="drop-name">{title}</h3>
         {props.children}
       </div>
     </div>
