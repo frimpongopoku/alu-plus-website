@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Component } from "react";
 import MUImage from "./../../../assets/media/alu-mauri.jpeg";
 import RWImage from "./../../../assets/media/alu-rwanda.jpeg";
-import { STUDENT_LIFE_LINKS } from "./values";
+import { ABOUT_US_LINKS, ACADEMICS_LINKS, STUDENT_LIFE_LINKS } from "./values";
 export const StudentLife = () => {
   return (
     <>
@@ -58,7 +58,7 @@ export const StudentLife = () => {
         </a>
       </div>
 
-      <div style={{ display: "flex", flexDirection: "column", height: "70%" }}>
+      <div className="normal-menu-blanket-column">
         {STUDENT_LIFE_LINKS.map((link) => (
           <a className="student-life-link" href={link.link}>
             {link.name}
@@ -69,6 +69,56 @@ export const StudentLife = () => {
           </a>
         ))}
       </div>
+    </>
+  );
+};
+
+export const Academics = () => {
+  return (
+    <>
+      {ACADEMICS_LINKS.map((list, index) => (
+        <div key={index.toString()} className="normal-menu-blanket-column">
+          <p style={{ fontWeight: "500" }}>{list.groupName}</p>
+          {list.links.map((link, ind) => (
+            <a
+              className="student-life-link"
+              key={ind.toString()}
+              href={link.link}
+            >
+              {link.name}
+              <FontAwesomeIcon
+                style={{ marginLeft: 5 }}
+                icon={faLongArrowAltRight}
+              />
+            </a>
+          ))}
+        </div>
+      ))}
+    </>
+  );
+};
+export const AboutUs = () => {
+  return (
+    <>
+      {ABOUT_US_LINKS.map((list, index) => (
+        <div key={index.toString()} className="normal-menu-blanket-column">
+          <p style={{ fontWeight: "500" }}>{list.groupName}</p>
+          {list.links.map((link, ind) => (
+            <a
+              key={ind.toString()}
+              style={{ textTransform: "capitalize" }}
+              className="student-life-link"
+              href={link.link}
+            >
+              {link.name}
+              <FontAwesomeIcon
+                style={{ marginLeft: 5 }}
+                icon={faLongArrowAltRight}
+              />
+            </a>
+          ))}
+        </div>
+      ))}
     </>
   );
 };

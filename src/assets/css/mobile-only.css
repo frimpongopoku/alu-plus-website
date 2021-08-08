@@ -29,4 +29,9 @@
   .footer-container {
     height: 600px;
   }
+
+  .top-bar-link {
+    font-size: 0.6rem !important;
+  }
 }
+

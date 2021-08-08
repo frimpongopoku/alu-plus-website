@@ -56,7 +56,7 @@
   border: 0;
   height: 91px;
   font-size: 1.4rem;
-  border-radius: 7px;
+  border-radius: 4px;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -154,8 +154,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  /* padding: 20px; */
+  padding: 0px 30px;
   height: 100%;
+  flex: 12;
 }
 .image-menu-card {
   margin: 0px 30px;
@@ -199,4 +200,104 @@
   font-weight: bold;
   color: var(--app-theme-blue);
   margin-left: 30px;
+  text-transform: uppercase;
+}
+
+.normal-menu-blanket-column {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  flex: 4;
+}
+
+.mobile-nav-main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 12;
+}
+
+.mobile-nav-logo {
+  height: 50px;
+  margin-top: -12;
+  /* flex: 4; */
+}
+
+.mobile-options {
+  cursor: pointer;
+  color: var(--app-theme-maroon);
+  font-size: 1.3rem;
+}
+
+.mobile-options:active {
+  color: var(--app-theme-blue);
+}
+
+.phone-ghost {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background: var(--app-theme-blue);
+  opacity: 0.9;
+  cursor: pointer;
+  top: 0;
+  z-index: 4;
+}
+
+.mobile-sidebar {
+  height: 100%;
+  position: fixed;
+  z-index: 5;
+  background: white;
+  width: 50vw;
+  top: 0;
+  right: 0;
+}
+
+.mobile-blanket {
+  height: 100%;
+  position: fixed;
+  z-index: 5;
+  background: transparent;
+  width: 50vw;
+  top: 0;
+  left: 0;
+}
+
+.mobile-side-close-btn {
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+  background: var(--app-theme-blue);
+  cursor: pointer;
+  color: white;
+}
+
+.mobile-side-close-btn:hover {
+  background: var(--app-theme-maroon);
+  color: white;
+  transition: 0.2s ease-out;
+}
+
+.mobile-side-link {
+  width: 100%;
+  padding: 10px 15px;
+  /* border: solid 2px transparent;
+  border-bottom-color: black; */
+}
+
+.mobile-side-link a {
+  color: black;
+  text-decoration: none;
+}
+
+.mobile-side-link:hover {
+  background: var(--app-theme-maroon);
+  transition: 0.2s ease-out;
+}
+
+.mobile-side-link:hover a {
+  color: white;
+  transition: 0.2s ease-out;
 }
