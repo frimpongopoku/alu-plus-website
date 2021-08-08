@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Hero from "../shared/components/Hero/Hero";
 import Navbar from "../shared/components/Navbar/Navbar";
 
 export default class Playground extends Component {
@@ -6,7 +7,8 @@ export default class Playground extends Component {
     return (
       <div>
         {/* <center>This is the end, hold your breathe and count to 10</center> */}
-        <Navbar />
+        {/* <Navbar /> */}
+        <Hero />
       </div>
     );
   }
