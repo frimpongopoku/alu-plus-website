@@ -1,0 +1,138 @@
+.logo-container {
+  background: white;
+  border-radius: 6px;
+  height: 200px;
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: -80px; */
+}
+
+#subscribe-button {
+  padding: 12px 20px;
+  background: var(--app-theme-blue);
+  color: white;
+  width: 100%;
+  margin-top: 10px;
+  border: 0;
+}
+
+#subscribe-button:focus {
+  outline: 0;
+}
+
+#subscribe-button:hover {
+  background: var(--app-theme-maroon-deep);
+  /* box-shadow: var(--elevate-1); */
+  transition: 0.2s ease-out;
+}
+
+#subscribe-button:active {
+  background: var(--app-theme-maroon);
+  border: solid 1px white;
+  transition: 0.2s ease-out;
+}
+.textbox {
+  padding: 10px 15px;
+  background: transparent;
+  /* border: solid 4px var(--app-theme-maroon); */
+  border: solid 2px #ffffff38;
+  width: 100%;
+  color: white;
+}
+
+.textbox::placeholder {
+  color: whitesmoke;
+}
+
+.textbox:focus {
+  outline: 0;
+}
+.subscription-area p {
+  color: white;
+}
+.footer-icon {
+  font-size: 1.5rem;
+  color: white;
+  margin: 20px 15px;
+  cursor: pointer;
+}
+
+.footer-icon :hover {
+  color: orange;
+  transition: 0.3s ease-out;
+}
+
+.footer-container {
+  background: var(--app-theme-maroon);
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.footer-bottom-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: var(--app-theme-maroon-deep);
+}
+
+.footer-bottom-panel p {
+  color: white;
+  margin-bottom: 0px;
+}
+.footer-content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 10px;
+}
+
+.footer-column {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer-about-us {
+  color: whitesmoke;
+  text-align: justify;
+}
+.footer-column-title {
+  width: 100%;
+  color: white;
+}
+
+.footer-link {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+.footer-link:hover {
+  color: orange;
+  transition: 0.2s ease-out;
+}
+
+.footer-link svg {
+  margin-right: 6px;
+}
+
+.footer-add {
+  display: "flex";
+  flex-direction: column;
+}
+
+.footer-add svg,
+.footer-add p,
+.footer-add h6 {
+  color: white;
+}
