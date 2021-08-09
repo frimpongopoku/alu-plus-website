@@ -7,7 +7,7 @@ export default class Card extends Component {
       <div className="card-container elevate-float">
         <div className="card-img-container">
           <img
-            className="card-img"
+            className="m-card-img"
             src={img || "https://via.placeholder.com/300"}
             alt="card media"
           ></img>
