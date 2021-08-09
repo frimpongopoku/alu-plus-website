@@ -1,4 +1,6 @@
 import {
+  faArrowCircleLeft,
+  faArrowCircleRight,
   faHandSparkles,
   faMedal,
   faStar,
@@ -77,7 +79,40 @@ export default class LandingPage extends Component {
         <PageTitle title="WHAT PEOPLE SAY" />
         <div className="landing-testimonials-container">
           <div>
-            <div className="l-test-card elevate-float"></div>
+            <div className="l-test-card ">
+              <img
+                src="https://i.pravatar.cc/300"
+                alt="user pic"
+                className="l-test-image"
+              />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+
+              <h5> ~Frimpong Opoku</h5>
+            </div>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: "100%",
+              padding: 20,
+            }}
+          >
+            <FontAwesomeIcon className="arrow-svg" icon={faArrowCircleLeft} />
+            <FontAwesomeIcon className="arrow-svg" icon={faArrowCircleRight} />
           </div>
         </div>
 
