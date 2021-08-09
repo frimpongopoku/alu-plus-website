@@ -1,0 +1,12 @@
+.land-fa {
+  font-size: 8rem;
+  margin: 10px;
+  color: var(--app-theme-maroon);
+}
+
+.land-h5 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--app-theme-maroon);
+  margin-top: 40px;
+}

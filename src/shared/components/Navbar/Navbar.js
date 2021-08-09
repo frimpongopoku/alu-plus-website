@@ -76,7 +76,7 @@ export default class Navbar extends Component {
             this.setState({ showPhoneSideBar: value });
           }}
         />
-        <div className="real-navbar elevate-float vanish-on-phone">
+        <div className="real-navbar elevate-1 vanish-on-phone">
           <div className="nav-logo">
             <img
               className=""

@@ -92,9 +92,12 @@
 
   .page-title {
     font-size: 1rem !important;
+    margin:10px !important;
+    padding:10px !important;
   }
 
   .page-title span {
     width: 100% !important;
+    
   }
 }
