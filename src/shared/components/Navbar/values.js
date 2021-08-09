@@ -88,13 +88,13 @@ export const NAV_DEFAULT_LINKS = [
     link: "#",
     hasChildren: true,
     name: "Academics",
-    jsx: Academics
+    jsx: Academics,
   },
   {
     id: "student-life",
     hasChildren: true,
     name: "Student Life",
-    jsx: StudentLife
+    jsx: StudentLife,
   },
   {
     id: "About",
@@ -105,7 +105,7 @@ export const NAV_DEFAULT_LINKS = [
   },
   {
     id: "contact",
-    link: "#",
+    link: "#testimonials",
     name: "Contact",
   },
 ];

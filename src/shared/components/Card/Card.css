@@ -21,7 +21,7 @@
   border-radius: 8px;
 }
 
-.card-img-overlay {
+.m-card-img-overlay {
   background: var(--overlay-color);
   opacity: 0.4;
   position: absolute;

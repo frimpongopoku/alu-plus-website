@@ -19,7 +19,7 @@ export default class LandingPage extends Component {
   render() {
     return (
       <div>
-        {/* <Navbar /> */}
+        <Navbar />
         <Hero
           title="AFRICAN LEADERSHIP UNIVERSITY"
           subtitle="Get the education that is built around the impact you want"
@@ -30,7 +30,10 @@ export default class LandingPage extends Component {
         <div className="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
           <div className="row">
             {CORE_COURSES.map((item, index) => (
-              <div key={index.toString()} className="col-md-3">
+              <div
+                key={index.toString()}
+                className="col-md-3 col-xs-3 col-sm-3"
+              >
                 <Card title={item.name} />
               </div>
             ))}
@@ -76,7 +79,7 @@ export default class LandingPage extends Component {
 
         {/* ----------- TESTIMONIALS --------- */}
 
-        <PageTitle title="WHAT PEOPLE SAY" />
+        <PageTitle title="WHAT PEOPLE SAY" tag="testimonials" />
         <div className="landing-testimonials-container">
           <div>
             <div className="l-test-card ">

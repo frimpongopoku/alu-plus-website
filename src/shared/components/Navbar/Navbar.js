@@ -44,122 +44,124 @@ export default class Navbar extends Component {
       this.state;
     const Jsx = (blanketContent && blanketContent.jsx) || <></>;
     return (
-      <div style={{ position: "relative" }}>
-        {/* ---------- TOP BAR -------- */}
-        <div className="top-nav">
-          <div className="right-blue-menu">
-            {TOP_LINKS.map((link, index) => (
-              <a
-                href={link.url}
-                key={index.toString()}
-                className="top-bar-link"
-              >
-                {" "}
-                {link.name}
+      <div className="navbar-root">
+        <div style={{ position: "relative" }}>
+          {/* ---------- TOP BAR -------- */}
+          <div className="top-nav">
+            <div className="right-blue-menu">
+              {TOP_LINKS.map((link, index) => (
+                <a
+                  href={link.url}
+                  key={index.toString()}
+                  className="top-bar-link"
+                >
+                  {" "}
+                  {link.name}
+                </a>
+              ))}
+            </div>
+
+            <div className="top-creators">
+              <a href="#" className="top-bar-link">
+                About Creators
               </a>
-            ))}
+            </div>
           </div>
 
-          <div className="top-creators">
-            <a href="#" className="top-bar-link">
-              About Creators
-            </a>
-          </div>
-        </div>
+          {/* ----------------- REAL NAV BAR ------------- */}
 
-        {/* ----------------- REAL NAV BAR ------------- */}
+          <MobileNav
+            logo={logo}
+            toggled={this.state.showPhoneSideBar}
+            toggleSidebar={(value) => {
+              this.setState({ showPhoneSideBar: value });
+            }}
+          />
+          <div className="real-navbar elevate-1 vanish-on-phone">
+            <div className="nav-logo">
+              <img
+                className=""
+                style={{ height: 120, marginTop: -12 }}
+                src={logo}
+              />
+            </div>
 
-        <MobileNav
-          logo={logo}
-          toggled={this.state.showPhoneSideBar}
-          toggleSidebar={(value) => {
-            this.setState({ showPhoneSideBar: value });
-          }}
-        />
-        <div className="real-navbar elevate-1 vanish-on-phone">
-          <div className="nav-logo">
-            <img
-              className=""
-              style={{ height: 120, marginTop: -12 }}
-              src={logo}
-            />
-          </div>
+            <div className="nav-links-container">
+              {NAV_DEFAULT_LINKS.map((item, index) => (
+                <div key={index.toString()}>
+                  {item.hasChildren ? (
+                    <a
+                      href="#"
+                      className="menu-item"
+                      onClick={(e) =>
+                        this.showDropdown(e, {
+                          id: item.id,
+                          jsx: item.jsx,
+                          title: item.name,
+                        })
+                      }
+                    >
+                      {item.name}{" "}
+                    </a>
+                  ) : (
+                    <a className="menu-item" href={item.link}>
+                      {item.name}{" "}
+                    </a>
+                  )}
+                </div>
+              ))}
+            </div>
 
-          <div className="nav-links-container">
-            {NAV_DEFAULT_LINKS.map((item, index) => (
-              <div key={index.toString()}>
-                {item.hasChildren ? (
-                  <a
-                    href="#"
-                    className="menu-item"
-                    onClick={(e) =>
-                      this.showDropdown(e, {
-                        id: item.id,
-                        jsx: item.jsx,
-                        title: item.name,
-                      })
-                    }
-                  >
-                    {item.name}{" "}
-                  </a>
-                ) : (
-                  <a className="menu-item" href={item.link}>
-                    {item.name}{" "}
-                  </a>
-                )}
-              </div>
-            ))}
+            <button className="nav-apply">
+              Apply Now <FontAwesomeIcon icon={faLongArrowAltRight} />
+            </button>
           </div>
 
-          <button className="nav-apply">
-            Apply Now <FontAwesomeIcon icon={faLongArrowAltRight} />
-          </button>
-        </div>
-
-        {/* ------ MOBILE SIDEBAR COMPONENT --------- */}
-        {showPhoneSideBar && (
-          <>
-            <div className="phone-ghost"></div>
-            <MobileSideBar
-              showBlanket={this.showDropdown}
-              toggled={this.state.showPhoneSideBar}
-              toggleSidebar={(value) => {
-                this.setState({ showPhoneSideBar: value });
-              }}
-            />
-            {showPhoneBlanket && (
-              <MobileBlanket
-                title={this.state.blanketContent?.title}
+          {/* ------ MOBILE SIDEBAR COMPONENT --------- */}
+          {showPhoneSideBar && (
+            <>
+              <div className="phone-ghost"></div>
+              <MobileSideBar
+                showBlanket={this.showDropdown}
                 toggled={this.state.showPhoneSideBar}
                 toggleSidebar={(value) => {
                   this.setState({ showPhoneSideBar: value });
                 }}
-              >
-                {<Jsx />}
-              </MobileBlanket>
-            )}
-          </>
-        )}
+              />
+              {showPhoneBlanket && (
+                <MobileBlanket
+                  title={this.state.blanketContent?.title}
+                  toggled={this.state.showPhoneSideBar}
+                  toggleSidebar={(value) => {
+                    this.setState({ showPhoneSideBar: value });
+                  }}
+                >
+                  {<Jsx />}
+                </MobileBlanket>
+              )}
+            </>
+          )}
 
-        {/* -------------------- NORMAL PC MODE NAV & BLANKET  */}
-        {showBlanket && (
-          <>
-            <div className="vanish-on-phone">
-              <div
-                className="ghost-curtain"
-                onClick={() => {
-                  this.setState({ showBlanket: false, blanketContent: null });
-                }}
-              ></div>
-              <div className="nav-drop-blanket elevate-float">
-                <div style={{ padding: 20, height: "100%", width: "100%" }}>
-                  <h3 className="drop-name">{blanketContent?.title}</h3>
-                  <div className="student-life-menu-container">{<Jsx />}</div>
+          {/* -------------------- NORMAL PC MODE NAV & BLANKET  */}
+          {showBlanket && (
+            <>
+              <div className="vanish-on-phone">
+                <div
+                  className="ghost-curtain"
+                  onClick={() => {
+                    this.setState({ showBlanket: false, blanketContent: null });
+                  }}
+                ></div>
+                <div className="nav-drop-blanket elevate-float">
+                  <div style={{ padding: 20, height: "100%", width: "100%" }}>
+                    <h3 className="drop-name">{blanketContent?.title}</h3>
+                    <div className="student-life-menu-container">{<Jsx />}</div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </>
-        )}
+            </>
+          )}
+        </div>
       </div>
     );
   }

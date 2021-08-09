@@ -5,9 +5,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 export default class Hero extends Component {
   render() {
-    const { theme, skewed, title, subtitle, link, linkText, Jsx } = this.props;
+    const { theme, skewed, title, subtitle, link, linkText, Jsx} =
+      this.props;
     return (
-      <div style={{ position: "relative" }}>
+      <div
+        style={{ position: "relative", marginTop: "12vh" }}
+      
+      >
         <div className="hero-sizing hero-background">
           <img src={backImage} className="hero-sizing hero-back-image" />
         </div>

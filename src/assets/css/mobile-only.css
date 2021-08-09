@@ -44,6 +44,7 @@
 
   .student-life-link {
     color: #e8adbf !important;
+    font-size: 1rem !important;
   }
 
   .drop-name {
@@ -86,8 +87,12 @@
     text-align: center;
   }
 
+  .hero-content a {
+    font-size: 0.7rem !important;
+    padding: 7px 25px !important;
+  }
   .hero-sizing {
-    height: 20vh;
+    height: 30vh;
   }
 
   .page-title {
@@ -137,12 +142,12 @@
     font-size: 4rem !important;
   }
 
-  .land-5 {
-    font-size: 1.2rem;
+  .land-h5 {
+    font-size: 1.2rem !important;
   }
 
   .only-at-alu {
     height: 300px !important;
-    margin-bottom: 30px;
+    margin-bottom: 15%;
   }
 }

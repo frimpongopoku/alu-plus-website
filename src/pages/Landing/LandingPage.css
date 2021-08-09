@@ -10,3 +10,83 @@
   color: var(--app-theme-maroon);
   margin-top: 40px;
 }
+
+.only-at-alu {
+  height: 760px;
+  background: var(--app-theme-blue);
+  width: 100%;
+}
+
+.landing-testimonials-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 190px;
+  width: 100%;
+  height: 50vh;
+  flex-direction: column;
+}
+
+.l-test-card {
+  background: white;
+  min-height: 350px;
+  width: 50vw;
+  border-radius: 10px;
+  padding: 30px;
+  padding-left: 40px;
+  position: relative;
+  box-shadow: 14px 9px 13px 7px #d8d8d894;
+  -webkit-box-shadow: 14px 9px 13px 7px #d8d8d894;
+}
+.l-test-card p {
+  font-size: 1.4rem;
+  color: #6d6d6d;
+}
+
+.l-test-card h5 {
+  color: var(--app-theme-blue);
+  font-weight: 900;
+}
+
+.l-test-image {
+  height: 160px;
+  width: 180px;
+  object-fit: cover;
+  position: absolute;
+  top: -70px;
+  left: -70px;
+  z-index: 2;
+  border-radius: 10px;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.l-test-image:hover {
+  opacity: 1;
+  transition: 0.3s ease-out;
+}
+
+.test-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10vh;
+}
+
+.arrow-svg {
+  font-size: 5rem;
+  margin: 8px;
+  color: var(--app-theme-maroon);
+  cursor: pointer;
+}
+
+.arrow-svg:hover {
+  color: var(--app-theme-blue);
+  transition: 0.2s ease-out;
+}
+
+.arrow-svg:active {
+  color: orange;
+  transition: 0.2s ease-out;
+}

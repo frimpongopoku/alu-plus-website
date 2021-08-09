@@ -16,7 +16,7 @@ export default class Card extends Component {
               "--overlay-color":
                 theme?.overlayColor || "var(--app-theme-maroon)",
             }}
-            className="card-img-overlay"
+            className="m-card-img-overlay"
           ></div>
         </div>
         <div className="card-content">
