@@ -3,8 +3,6 @@ import {
   faArrowCircleRight,
   faHandSparkles,
   faMedal,
-  faStar,
-  faStarOfLife,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Component } from "react";
