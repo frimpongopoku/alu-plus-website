@@ -89,4 +89,12 @@
   .hero-sizing {
     height: 20vh;
   }
+
+  .page-title {
+    font-size: 1rem !important;
+  }
+
+  .page-title span {
+    width: 100% !important;
+  }
 }
