@@ -76,4 +76,25 @@
   .image-menu-card a {
     color: #6c849c !important;
   }
+  .hero-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .hero-sizing {
+    height: 20vh;
+  }
+
+  .page-title {
+    font-size: 1rem !important;
+  }
+
+  .page-title span {
+    width: 100% !important;
+  }
 }
