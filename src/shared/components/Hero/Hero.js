@@ -4,14 +4,44 @@ import backImage from "./../../../assets/media/back-grad.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 export default class Hero extends Component {
+  constructor(props) {
+    super(props);
+    this.skewedDiv = null;
+    this.setSkewedDiv = (element) => (this.skewedDiv = element);
+    this.gbemi = React.createRef();
+  }
+  componentDidMount() {
+    this.scrollCheckFxn();
+  }
+
+  scrollCheckFxn() {
+    // ---- to be continued
+    var lastScrollTop = 0;
+    window.addEventListener(
+      "scroll",
+      function () {
+        var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+        const div = this.skewedDiv?.current;
+        if (st > lastScrollTop) {
+          // downscroll code
+          // div.style.opacity = 0;
+          if (div) div.style.opacity = 0;
+          // console.log("I ma the div bro", this.skewedDiv);
+        } else {
+          // upscroll code
+          if (div) div.style.opacity = 1;
+        }
+        lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+      },
+      false
+    );
+  }
   render() {
-    const { theme, skewed, title, subtitle, link, linkText, Jsx} =
-      this.props;
+    this.scrollCheckFxn();
+    const { theme, skewed, title, subtitle, link, linkText, Jsx } = this.props;
+
     return (
-      <div
-        style={{ position: "relative", marginTop: "12vh" }}
-      
-      >
+      <div style={{ position: "relative", marginTop: "12vh" }} ref={this.gbemi}>
         <div className="hero-sizing hero-background">
           <img src={backImage} className="hero-sizing hero-back-image" />
         </div>
@@ -25,6 +55,7 @@ export default class Hero extends Component {
         {skewed ? (
           <>
             <div
+              ref={this.setSkewedDiv}
               className="skewed-box"
               style={{
                 "--skewed-background": theme?.skewedBackgroundColor || "maroon",

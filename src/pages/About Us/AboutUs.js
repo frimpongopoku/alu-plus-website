@@ -9,7 +9,7 @@ export default class AboutUs extends Component {
   lefSide() {
     return (
       <div>
-        <img src="https://via.placeholder.com/300" />
+        <img className="sole-image" src="https://via.placeholder.com/300" />
       </div>
     );
   }
@@ -50,7 +50,9 @@ export default class AboutUs extends Component {
           leftSplit={8}
           rightSplit={4}
           left={this.rightSide()}
-          right={<img src="https://via.placeholder.com/300" />}
+          right={
+            <img className="sole-image" src="https://via.placeholder.com/300" />
+          }
         />
 
         <PageTitle title="FRUITFULL EXPERIENCES WHILE SOLVING AFRICA'S PROBLEMS" />

@@ -150,4 +150,36 @@
     height: 300px !important;
     margin-bottom: 15%;
   }
+
+  .tray-number {
+    font-size: 2rem !important;
+  }
+
+  .tray-item span {
+    font-size: 0.7rem;
+  }
+
+  .sole-image {
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+  }
+
+  .text-block {
+    font-size: 0.9rem !important;
+  }
+
+  .image-in-view {
+    height: 220px !important;
+  }
+
+  .img-item {
+    width: 90px !important;
+    height: 80px !important;
+  }
+
+  .image-shelf {
+    min-height: 110px !important;
+  }
 }
