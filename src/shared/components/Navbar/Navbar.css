@@ -188,6 +188,7 @@
 .student-life-link {
   text-decoration: none;
   color: var(--app-theme-maroon);
+  font-size:1.2rem; 
 }
 
 .student-life-link:hover {
@@ -303,4 +304,10 @@
   transition: 0.2s ease-out;
 }
 
-
+.navbar-root {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: white;
+  z-index: 20;
+}

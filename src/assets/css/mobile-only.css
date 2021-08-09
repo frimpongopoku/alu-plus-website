@@ -44,6 +44,7 @@
 
   .student-life-link {
     color: #e8adbf !important;
+    font-size: 1rem !important;
   }
 
   .drop-name {
@@ -86,15 +87,67 @@
     text-align: center;
   }
 
+  .hero-content a {
+    font-size: 0.7rem !important;
+    padding: 7px 25px !important;
+  }
   .hero-sizing {
-    height: 20vh;
+    height: 30vh;
   }
 
   .page-title {
     font-size: 1rem !important;
+    margin: 10px !important;
+    padding: 10px !important;
   }
 
   .page-title span {
-    width: 100% !important;
+    width: 80% !important;
+  }
+
+  .landing-testimonials-container {
+    height: auto !important;
+  }
+
+  .l-test-card {
+    box-shadow: 0 0 0 !important;
+    height: 100px !important;
+    width: 100vw !important;
+    padding: 15px !important;
+    padding-left: 15px !important;
+    margin: 10px;
+    min-height: 220px;
+  }
+
+  .l-test-card p {
+    font-size: 0.8rem !important;
+  }
+
+  .l-test-card h5 {
+    font-size: 0.9rem !important;
+  }
+
+  .l-test-image {
+    top: -80px !important;
+    left: 10px !important;
+    height: 90px !important;
+    width: 90px !important;
+  }
+
+  .arrow-svg {
+    font-size: 3rem !important;
+  }
+
+  .land-fa {
+    font-size: 4rem !important;
+  }
+
+  .land-h5 {
+    font-size: 1.2rem !important;
+  }
+
+  .only-at-alu {
+    height: 300px !important;
+    margin-bottom: 15%;
   }
 }

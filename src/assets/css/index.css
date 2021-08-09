@@ -6,9 +6,30 @@
 @import url("./pc-only.css");
 :root {
   --default-font-family: "Google Sans", sans-serif;
+  --page-max-flex: 12;
+  --number-of-children: 3;
 }
 
 html {
   font-family: var(--default-font-family);
   font-family: 400;
+  scroll-behavior: smooth;
+}
+
+.page-row {
+  display: flex;
+  flex-direction: row;
+  flex: var(--page-max-flex);
+}
+
+.page-row-child {
+  margin: 10px;
+  flex: calc(var(--page-max-flex) / var(--number-of-children));
+}
+
+.m-column {
+  display: Flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
