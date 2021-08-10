@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AboutUs from "./pages/About Us/AboutUs";
+import ApplicationPage from "./pages/Application/ApplicationPage";
 import AcademicCalendar from "./pages/Calendar/AcademicCalendar";
 import Creators from "./pages/Creators/Creators";
 import LandingPage from "./pages/Landing/LandingPage";
@@ -17,6 +18,7 @@ class App extends Component {
           <Route exact path="/about" component={AboutUs} />
           <Route exact path="/academics" component={AcademicCalendar} />
           <Route exact path="/creators" component={Creators} />
+          <Route exact path="/apply" component={ApplicationPage} />
         </Switch>
       </Router>
     );

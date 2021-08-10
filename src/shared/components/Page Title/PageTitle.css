@@ -15,3 +15,8 @@
 .page-title span {
   width: 30%;
 }
+
+.page-title small {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}

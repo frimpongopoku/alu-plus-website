@@ -234,4 +234,34 @@
   .team-member-country {
     font-size: 0.7rem !important;
   }
+
+  .page-title small {
+    font-size: 0.85rem !important;
+  }
+
+  .m-label {
+    font-size: 0.9rem !important;
+  }
+
+  .m-textbox {
+    padding: 10px !important;
+    font-size: 1rem !important;
+  }
+
+  .custom-select-container {
+    padding: 10px !important;
+  }
+
+  .hybrid {
+    padding: 6px 20px !important;
+    font-size: 0.9rem !important;
+  }
+
+  .comment-item h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .comment-item p {
+    font-size: 0.85rem !important;
+  }
 }

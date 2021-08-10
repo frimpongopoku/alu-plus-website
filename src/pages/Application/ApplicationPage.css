@@ -1,0 +1,79 @@
+.m-label {
+  font-size: 1.1rem;
+  color: black;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+
+.input-container {
+  padding: 10px;
+}
+
+.m-textbox {
+  width: 100%;
+  border: solid 2px #d6d6d6;
+  outline: 0;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+}
+
+.custom-select-container {
+  width: 100%;
+  padding: 15px 30px;
+  border: solid 2px #d6d6d6;
+}
+
+.select-undefault {
+  width: 100%;
+  border-width: 0px;
+  background: white;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.select-undefault:focus {
+  outline: 0;
+}
+
+.comment-item {
+  padding: 20px;
+  /* border: solid 2px var(--app-theme-blue); */
+  border-radius: 10px;
+  box-shadow: var(--elevate-half);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.comment-item:hover {
+  background: rgb(255 245 245);
+  transition: 0.2s ease-out;
+}
+
+.comment-item h3 {
+  color: var(--app-theme-blue);
+  font-size: 1.4rem;
+}
+
+.comment-item small {
+  display: block;
+  font-size: 0.9rem;
+  color: Grey;
+}
+.comment p {
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.m-textarea {
+  padding: 10px 20px;
+  border: solid 1px var(--app-theme-maroon);
+  border-bottom-width: 5px;
+  resize: none;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius:7px;
+}
+
+.m-textarea:focus {
+  outline: 0;
+}
