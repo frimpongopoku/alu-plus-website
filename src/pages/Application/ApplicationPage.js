@@ -59,7 +59,18 @@ export default class ApplicationPage extends Component {
               <small>Unique Identification: </small>{" "}
               <small>UIERjdFDSJ783d&dddd</small>
             </div>
-
+            <Textbox
+              label="name"
+              placeholder="What name would you like to go by? "
+              type="text"
+              style={{
+                borderColor: "var(--app-theme-maroon)",
+                // borderRadius: 5,
+                borderWidth: 0,
+                borderLeftWidth: 4,
+                marginBottom: 10,
+              }}
+            />
             <textarea
               className="m-textarea"
               rows="6"
@@ -110,11 +121,16 @@ export default class ApplicationPage extends Component {
 }
 
 const Textbox = (props) => {
-  const { type, placeholder, label } = props;
+  const { type = "text", placeholder, label, style = {} } = props;
   return (
     <div className="input-container">
       <small className="m-label">{label}</small>
-      <input className="m-textbox" type={type} placeholder={placeholder} />
+      <input
+        className="m-textbox"
+        type={type}
+        placeholder={placeholder}
+        style={style}
+      />
     </div>
   );
 };
