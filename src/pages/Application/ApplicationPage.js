@@ -37,7 +37,7 @@ export default class ApplicationPage extends Component {
           })}
           <div className="everyday-flex" style={{ justifyContent: "flex-end" }}>
             <button
-              className="btn btn-success"
+              className="btn btn-success hybrid"
               style={{
                 padding: "15px 50px",
                 fontSize: "1.2rem",
@@ -56,7 +56,7 @@ export default class ApplicationPage extends Component {
         <div className="col-md-8 offset-md-2" style={{ marginTop: "4%" }}>
           <div className="comment-section">
             <div style={{ color: "#e4e4e4" }}>
-              <small>Unique Identification</small>{" "}
+              <small>Unique Identification: </small>{" "}
               <small>UIERjdFDSJ783d&dddd</small>
             </div>
 
@@ -74,7 +74,7 @@ export default class ApplicationPage extends Component {
               }}
             >
               <button
-                className="btn btn-success"
+                className="btn btn-success hybrid"
                 style={{
                   padding: "15px 50px",
                   fontSize: "1.2rem",
