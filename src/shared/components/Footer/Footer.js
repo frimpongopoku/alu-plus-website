@@ -17,7 +17,7 @@ import { QUICK_LINKS } from "./values";
 export default class Footer extends Component {
   render() {
     return (
-      <div className="footer-container" style={{marginTop:60}}>
+      <div className="footer-container" style={{marginTop:"10%"}}>
         <div className="row" style={{ height: "100%" }}>
           <div
             className="col-md-3 footer-column vanish-on-pc"
