@@ -1,0 +1,21 @@
+.team-mate-img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 100%;
+
+  border: solid 6px orange;
+}
+
+.team-member-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--app-theme-maroon);
+  /* margin-bottom: 15px; */
+}
+.team-member-country {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+}

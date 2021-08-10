@@ -213,4 +213,25 @@
   .calendar-row-title {
     font-size: 0.8rem !important;
   }
+
+  .team-mate-img {
+    height: 160px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 0% !important;
+  }
+
+  .team-member-name {
+    font-size: 0.7rem !important;
+    flex: 10 !important;
+  }
+
+  .member-bio {
+    font-size: 0.9rem !important;
+    text-align: justify;
+  }
+
+  .team-member-country {
+    font-size: 0.7rem !important;
+  }
 }
