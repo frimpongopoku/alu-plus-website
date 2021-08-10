@@ -182,4 +182,35 @@
   .image-shelf {
     min-height: 110px !important;
   }
+
+  .academic-header {
+    padding-left: 30px !important;
+  }
+
+  .academic-header span {
+    font-size: 0.8rem !important;
+  }
+
+  .academic-body {
+    padding: 15px !important;
+    margin-bottom: 50px !important;
+  }
+
+  .row-left p,
+  .row-right p {
+    font-size: 0.7rem;
+  }
+
+  .row-left h5,
+  .row-right h5 {
+    font-size: 0.9rem !important;
+  }
+
+  .calendar-row {
+    min-height: 35px !important;
+  }
+
+  .calendar-row-title {
+    font-size: 0.8rem !important;
+  }
 }

@@ -45,6 +45,7 @@ export default class AcademicCalendar extends Component {
                         fontWeight: "bold",
                         marginTop: 20,
                       }}
+                      className="calendar-row-title"
                     >
                       {list.title}
                     </p>
