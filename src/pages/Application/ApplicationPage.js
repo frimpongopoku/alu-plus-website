@@ -53,6 +53,57 @@ export default class ApplicationPage extends Component {
           title="ASK US YOUR QUESTIONS"
           subtitle="The questions you ask here will be public "
         />
+        <div className="col-md-8 offset-md-2" style={{ marginTop: "4%" }}>
+          <div className="comment-section">
+            <div style={{ color: "#e4e4e4" }}>
+              <small>Unique Identification</small>{" "}
+              <small>UIERjdFDSJ783d&dddd</small>
+            </div>
+
+            <textarea
+              className="m-textarea"
+              rows="6"
+              placeholder="Ask us any question..."
+            ></textarea>
+
+            <div
+              className="everyday-flex"
+              style={{
+                justifyContent: "flex-end",
+                marginBottom: 13,
+              }}
+            >
+              <button
+                className="btn btn-success"
+                style={{
+                  padding: "15px 50px",
+                  fontSize: "1.2rem",
+                  fontWeight: "bold",
+                  marginRight: 10,
+                  background: "var(--app-theme-maroon)",
+                  borderColor: "var(--app-theme-maroon)",
+                }}
+              >
+                POST
+              </button>
+            </div>
+          </div>
+          {[1, 2, 4, 4].map((item, index) => (
+            <div className="comment-item" key={index.toString()}>
+              <h3>Frimpong Opoku Agyemang</h3>
+              <small>22nd February 2021</small>
+              <p>
+                cum mattis amet fusce. Maecenas ut elit, malesuada eu libero,
+                cursus dis porta et. Cras egestas pellentesque nunc elit turpis
+                ultrices ornare nullam tortor. Cras sit lectus habitant turpis
+                dolor tortor viverra est lorem. Pellentesque hendrerit tempor
+                laoreet facilisi netus tincidunt sit blandit et. Quis orci eu
+                imperdiet congue sed quam semper. Auctor amet tortor sed vitae.
+                A mattis ullamcorper
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     );
   }

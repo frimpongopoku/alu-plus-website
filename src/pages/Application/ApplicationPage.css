@@ -34,3 +34,46 @@
 .select-undefault:focus {
   outline: 0;
 }
+
+.comment-item {
+  padding: 20px;
+  /* border: solid 2px var(--app-theme-blue); */
+  border-radius: 10px;
+  box-shadow: var(--elevate-half);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.comment-item:hover {
+  background: rgb(255 245 245);
+  transition: 0.2s ease-out;
+}
+
+.comment-item h3 {
+  color: var(--app-theme-blue);
+  font-size: 1.4rem;
+}
+
+.comment-item small {
+  display: block;
+  font-size: 0.9rem;
+  color: Grey;
+}
+.comment p {
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.m-textarea {
+  padding: 10px 20px;
+  border: solid 1px var(--app-theme-maroon);
+  border-bottom-width: 5px;
+  resize: none;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius:7px;
+}
+
+.m-textarea:focus {
+  outline: 0;
+}
