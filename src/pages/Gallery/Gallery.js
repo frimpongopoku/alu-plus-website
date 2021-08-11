@@ -11,7 +11,7 @@ export default class Gallery extends Component {
         <Navbar />
         <Hero title="ALU Gallery" subtitle="Experience our highlights" />
         {SECTIONS.map((sec, index) => (
-          <>
+          <div key={index.toString()}>
             <PageTitle title={sec.title} tag={sec.tag} />
             <div className="col-md-10 offset-md-1">
               <div
@@ -27,7 +27,7 @@ export default class Gallery extends Component {
                 ))}
               </div>
             </div>
-          </>
+          </div>
         ))}
       </div>
     );

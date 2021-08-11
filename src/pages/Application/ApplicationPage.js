@@ -120,8 +120,22 @@ export default class ApplicationPage extends Component {
   }
 }
 
-const Textbox = (props) => {
-  const { type = "text", placeholder, label, style = {} } = props;
+export const Textbox = (props) => {
+  const { type = "text", placeholder, label, style = {}, textarea } = props;
+
+  if (textarea)
+    return (
+      <div className="input-container">
+        <small className="m-label">{label}</small>
+        <textarea
+          className="m-textbox"
+          type={type}
+          placeholder={placeholder}
+          style={style}
+          rows="7"
+        ></textarea>
+      </div>
+    );
   return (
     <div className="input-container">
       <small className="m-label">{label}</small>

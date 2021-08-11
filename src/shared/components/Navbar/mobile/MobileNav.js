@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NAV_DEFAULT_LINKS } from "../values";
 
 export const MobileNav = (props) => {
-  const { logo, toggleSidebar, toggled } = props;
+  const { logo, toggleSidebar, toggled, goHome } = props;
   return (
     <div className="elevate-float mobile-nav-main-container vanish-on-pc">
       <div style={{ flex: "4" }}>
-        <img className="mobile-nav-logo" src={logo} />
+        <img className="mobile-nav-logo" src={logo} onClick={() => goHome()} />
       </div>
 
       <div

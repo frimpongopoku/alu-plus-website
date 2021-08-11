@@ -46,6 +46,7 @@
 .nav-logo {
   flex: 2;
   height: 80px;
+  cursor: pointer;
   width: 80px;
 }
 

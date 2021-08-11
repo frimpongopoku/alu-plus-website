@@ -20,3 +20,19 @@ export const CORE_COURSES = [
   Porttitor aliquet etiam dictum ut mauris in cras quisque tristique.`,
   },
 ];
+
+export const CONTACT_FORM = [
+  { label: "Full Name", name: "name", placeholder: "Enter your full name..." },
+  { label: "Email", name: "email", placeholder: "Enter a valid email..." },
+  {
+    label: "Title",
+    name: "subject",
+    placeholder: "Enter a  title to your  message...",
+  },
+  {
+    label: "Message",
+    name: "Message",
+    placeholder: "Enter a  message...",
+    textarea: true,
+  },
+];

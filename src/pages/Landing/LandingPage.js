@@ -12,12 +12,13 @@ import Hero from "../../shared/components/Hero/Hero";
 import Navbar from "../../shared/components/Navbar/Navbar";
 import PageTitle from "../../shared/components/Page Title/PageTitle";
 import "./LandingPage.css";
-import { CORE_COURSES } from "./values";
+import { CONTACT_FORM, CORE_COURSES } from "./values";
 import { getRandomAnimationClass } from "./../../shared/utils/utils";
 import facebook from "./../../assets/media/facebook.png";
 import google from "./../../assets/media/google.png";
 import coke from "./../../assets/media/coke.png";
 import microsoft from "./../../assets/media/microsoft.png";
+import { Textbox } from "../Application/ApplicationPage";
 export default class LandingPage extends Component {
   render() {
     return (
@@ -127,6 +128,32 @@ export default class LandingPage extends Component {
           >
             <FontAwesomeIcon className="arrow-svg" icon={faArrowCircleLeft} />
             <FontAwesomeIcon className="arrow-svg" icon={faArrowCircleRight} />
+          </div>
+        </div>
+
+        <PageTitle
+          title="CONTACT US"
+          subtitle="Send us a message"
+          tag="contact-us"
+        />
+        <div className="col-md-8 offset-md-2">
+          {CONTACT_FORM.map((field, index) => (
+            <div key={index.toString()}>
+              <Textbox {...field} />
+            </div>
+          ))}
+          <div className="everyday-flex" style={{ justifyContent: "flex-end" }}>
+            <button
+              className="btn btn-success hybrid"
+              style={{
+                padding: "15px 50px",
+                fontSize: "1.2rem",
+                fontWeight: "bold",
+                marginRight: 10,
+              }}
+            >
+              SEND
+            </button>
           </div>
         </div>
 

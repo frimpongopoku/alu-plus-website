@@ -76,6 +76,7 @@ class Navbar extends Component {
             toggleSidebar={(value) => {
               this.setState({ showPhoneSideBar: value });
             }}
+            goHome={() => this.props.history.push("/")}
           />
           <div className="real-navbar elevate-1 vanish-on-phone">
             <div className="nav-logo">
@@ -83,6 +84,7 @@ class Navbar extends Component {
                 className=""
                 style={{ height: 120, marginTop: -12 }}
                 src={logo}
+                onClick={() => this.props.history.push("/")}
               />
             </div>
 
