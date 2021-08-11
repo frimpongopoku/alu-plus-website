@@ -198,7 +198,7 @@
 
   .row-left p,
   .row-right p {
-    font-size: 0.7rem;
+    font-size: 0.7rem !important;
   }
 
   .row-left h5,
@@ -291,5 +291,13 @@
   .sponsor-logo {
     width: 90px !important;
     height: 70px !important;
+  }
+  .course-description h3 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .page-column {
+    padding: 0px !important;
   }
 }

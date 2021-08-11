@@ -22,19 +22,20 @@ export const ACADEMICS_LINKS = [
   {
     groupName: " Core Courses ",
     links: [
-      { name: "Entrpreneurial Leadership", link: "/academics" },
-      { name: " Data & Decisions", link: "#" },
-      { name: " Project Management", link: "#" },
+      { name: "Entrpreneurial Leadership", link: "/about#el" },
+      { name: " Data & Decisions", link: "/about#DD" },
+      { name: " Project Management", link: "/about#projects" },
+      { name: " Communication For Impact", link: "/about#cfi" },
     ],
   },
   {
     groupName: "ALC Mauritius",
     url: "mu",
     links: [
-      { name: "Computing", link: "#" },
-      { name: " Engeneering Studies", link: "#" },
-      { name: " Social Sciences", link: "#" },
-      { name: " Business Management", link: "#" },
+      { name: "Computing", link: "/about#computing" },
+      { name: " Engeneering Studies", link: "/about#engineering" },
+      { name: " Social Sciences", link: "/about#social-sciences" },
+      { name: " Business Management", link: "/about#business" },
     ],
   },
 
@@ -42,10 +43,10 @@ export const ACADEMICS_LINKS = [
     groupName: "ALU Rwanda",
     url: "/campus/rw",
     links: [
-      { name: "Global Challenges", link: "#" },
-      { name: " Computer Science", link: "#" },
-      { name: " Business Management", link: "#" },
-      { name: " Social Sciences", link: "#" },
+      { name: "Global Challenges", link: "/about#gc" },
+      { name: " Computer Science", link: "/about#computing" },
+      { name: " Business Management", link: "/about#business" },
+      { name: " Social Sciences", link: "/about#social-sciences" },
     ],
   },
 ];

@@ -63,3 +63,12 @@
   text-transform: uppercase;
   font-weight: bold;
 }
+
+.course-description {
+  margin-bottom: 20px;
+}
+
+.course-description h3 {
+  text-transform: uppercase;
+  color: var(--app-theme-blue);
+}

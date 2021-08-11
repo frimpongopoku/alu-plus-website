@@ -5,6 +5,7 @@ import Navbar from "../../shared/components/Navbar/Navbar";
 import PageRow from "../../shared/components/Page Row/PageRow";
 import PageTitle from "../../shared/components/Page Title/PageTitle";
 import "./AboutUs.css";
+import { COURSES } from "./values";
 export default class AboutUs extends Component {
   lefSide() {
     return (
@@ -107,6 +108,24 @@ export default class AboutUs extends Component {
               </div>
             ))}
           </div>
+        </div>
+        {/* ------------------ COURSE OVERVIEW --------------- */}
+
+        <PageTitle title="COURSE OVERVIEW" />
+        <div className="col-md-8 offset-md-2 ">
+          {COURSES.map((course, index) => (
+            <div
+              className="course-description"
+              key={index.toString()}
+              id={course.tag}
+            >
+              <h3>{course.name}</h3>
+
+              <p className="member-bio" style={{ textAlign: "justify" }}>
+                {course.text}
+              </p>
+            </div>
+          ))}
         </div>
 
         <Footer />
