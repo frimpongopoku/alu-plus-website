@@ -5,6 +5,7 @@ import ApplicationPage from "./pages/Application/ApplicationPage";
 import AcademicCalendar from "./pages/Calendar/AcademicCalendar";
 import CampusPage from "./pages/Campus Page/CampusPage";
 import Creators from "./pages/Creators/Creators";
+import Error from "./pages/Error/Error";
 import Gallery from "./pages/Gallery/Gallery";
 import LandingPage from "./pages/Landing/LandingPage";
 import Playground from "./pages/Playground";
@@ -23,6 +24,7 @@ class App extends Component {
           <Route exact path="/apply" component={ApplicationPage} />
           <Route exact path="/campus/:name/" component={CampusPage} />
           <Route exact path="/gallery" component={Gallery} />
+          <Route path="*" component={Error} />
         </Switch>
       </Router>
     );

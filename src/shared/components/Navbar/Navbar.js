@@ -6,7 +6,7 @@ import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { MobileBlanket, MobileNav, MobileSideBar } from "./mobile/MobileNav";
 import { withRouter } from "react-router";
-
+import { HashLink as Link } from "react-router-hash-link";
 class Navbar extends Component {
   constructor(props) {
     super(props);
@@ -50,21 +50,21 @@ class Navbar extends Component {
           <div className="top-nav">
             <div className="right-blue-menu">
               {TOP_LINKS.map((link, index) => (
-                <a
-                  href={link.url}
+                <Link
+                  to={link.url}
                   key={index.toString()}
                   className="top-bar-link"
                 >
                   {" "}
                   {link.name}
-                </a>
+                </Link>
               ))}
             </div>
 
             <div className="top-creators">
-              <a href="/creators" className="top-bar-link">
+              <Link to="/creators" className="top-bar-link">
                 About Creators
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -90,8 +90,8 @@ class Navbar extends Component {
               {NAV_DEFAULT_LINKS.map((item, index) => (
                 <div key={index.toString()}>
                   {item.hasChildren ? (
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       className="menu-item"
                       onClick={(e) =>
                         this.showDropdown(e, {
@@ -102,11 +102,11 @@ class Navbar extends Component {
                       }
                     >
                       {item.name}{" "}
-                    </a>
+                    </Link>
                   ) : (
-                    <a className="menu-item" href={item.link}>
+                    <Link className="menu-item" to={item.link}>
                       {item.name}{" "}
-                    </a>
+                    </Link>
                   )}
                 </div>
               ))}

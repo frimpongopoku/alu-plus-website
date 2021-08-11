@@ -97,6 +97,7 @@
   border: solid 4px transparent;
   /* border-right-width: 4px; */
   padding-right: 15px;
+  cursor: pointer;
 }
 
 .menu-item:hover {
@@ -188,7 +189,7 @@
 .student-life-link {
   text-decoration: none;
   color: var(--app-theme-maroon);
-  font-size:1.2rem; 
+  font-size: 1.2rem;
 }
 
 .student-life-link:hover {

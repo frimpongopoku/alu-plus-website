@@ -104,7 +104,7 @@ export const NAV_DEFAULT_LINKS = [
   },
   {
     id: "contact",
-    link: "#testimonials",
+    link: "/#testimonials",
     name: "Contact",
   },
 ];
