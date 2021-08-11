@@ -17,19 +17,20 @@ export const STUDENT_LIFE_LINKS = [
 export const ACADEMICS_LINKS = [
   {
     groupName: "Academic Calendar  ",
-    links: [{ name: "Academic Calendar", link: "#" }],
+    links: [{ name: "Academic Calendar", link: "/academics" }],
   },
   {
     groupName: " Core Courses ",
     links: [
-      { name: "Academic Calendar", link: "#" },
-      { name: "Entrpreneurial Leadership", link: "#" },
+      { name: "Academic Calendar", link: "/academics" },
+      { name: "Entrpreneurial Leadership", link: "/academics" },
       { name: " Data & Decisions", link: "#" },
       { name: " Project Management", link: "#" },
     ],
   },
   {
     groupName: "ALC Mauritius",
+    url:"mu",
     links: [
       { name: "Computing", link: "#" },
       { name: " Engeneering Studies", link: "#" },
@@ -40,6 +41,7 @@ export const ACADEMICS_LINKS = [
 
   {
     groupName: "ALU Rwanda",
+    url: "/campus/rw",
     links: [
       { name: "Global Challenges", link: "#" },
       { name: " Computer Science", link: "#" },
@@ -53,10 +55,9 @@ export const ABOUT_US_LINKS = [
   {
     groupName: "Advantage",
     links: [
-      { name: "The ALU Advantage", link: "#" },
-      { name: " Our Mission", link: "#" },
-      { name: " Life After ALU", link: "#" },
-      { name: " Social Sciences", link: "#" },
+      { name: "The ALU Advantage", link: "/about" },
+      { name: " Our Mission", link: "/about" },
+      { name: " Life After ALU", link: "/about" },
     ],
   },
   {
@@ -80,12 +81,12 @@ export const ABOUT_US_LINKS = [
 export const NAV_DEFAULT_LINKS = [
   {
     id: "home",
-    link: "#",
+    link: "/",
     name: "Home",
   },
   {
     id: "academics",
-    link: "#",
+    link: "academics",
     hasChildren: true,
     name: "Academics",
     jsx: Academics,

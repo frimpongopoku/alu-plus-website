@@ -41,7 +41,7 @@ export default class Hero extends Component {
     const { theme, skewed, title, subtitle, link, linkText, Jsx } = this.props;
 
     return (
-      <div style={{ position: "relative", marginTop: "12vh" }} ref={this.gbemi}>
+      <div style={{ position: "relative", marginTop: "10vh" }}  ref={this.gbemi}>
         <div className="hero-sizing hero-background">
           <img src={backImage} className="hero-sizing hero-back-image" />
         </div>

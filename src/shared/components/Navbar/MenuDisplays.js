@@ -24,7 +24,7 @@ export const StudentLife = () => {
           Experience the Island while shaping <br />
           Africa Up.
         </p>
-        <a href="#">
+        <a href="/campus/mu">
           See more{" "}
           <FontAwesomeIcon
             style={{ marginLeft: 5 }}
@@ -49,7 +49,7 @@ export const StudentLife = () => {
           Feast with Paul Kagame, while you straighten out <br />
           Africa's short comings.
         </p>
-        <a href="#">
+        <a href="/campus/rw">
           See more{" "}
           <FontAwesomeIcon
             style={{ marginLeft: 5 }}
@@ -77,7 +77,7 @@ export const StudentLife = () => {
   );
 };
 
-export const Academics = () => {
+export var Academics = () => {
   return (
     <>
       {ACADEMICS_LINKS.map((list, index) => (

@@ -13,8 +13,10 @@ import Navbar from "../../shared/components/Navbar/Navbar";
 import PageTitle from "../../shared/components/Page Title/PageTitle";
 import "./LandingPage.css";
 import { CORE_COURSES } from "./values";
+import { getRandomAnimationClass } from "./../../shared/utils/utils";
 export default class LandingPage extends Component {
   render() {
+    console.log("O am tje index", getRandomAnimationClass());
     return (
       <div>
         <Navbar />
@@ -32,7 +34,10 @@ export default class LandingPage extends Component {
                 key={index.toString()}
                 className="col-md-3 col-xs-3 col-sm-3"
               >
-                <Card title={item.name} />
+                <Card
+                  title={item.name}
+                  rootClassName={getRandomAnimationClass()}
+                />
               </div>
             ))}
           </div>

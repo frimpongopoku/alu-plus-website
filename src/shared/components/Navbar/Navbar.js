@@ -4,10 +4,10 @@ import { TOP_LINKS, NAV_DEFAULT_LINKS } from "./values";
 import logo from "./../../../assets/media/logo.png";
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { AboutUs, Academics, StudentLife } from "./MenuDisplays";
 import { MobileBlanket, MobileNav, MobileSideBar } from "./mobile/MobileNav";
+import { withRouter } from "react-router";
 
-export default class Navbar extends Component {
+class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -62,7 +62,7 @@ export default class Navbar extends Component {
             </div>
 
             <div className="top-creators">
-              <a href="#" className="top-bar-link">
+              <a href="/creators" className="top-bar-link">
                 About Creators
               </a>
             </div>
@@ -112,7 +112,12 @@ export default class Navbar extends Component {
               ))}
             </div>
 
-            <button className="nav-apply">
+            <button
+              className="nav-apply"
+              onClick={() => {
+                this.props.history.push("/apply");
+              }}
+            >
               Apply Now <FontAwesomeIcon icon={faLongArrowAltRight} />
             </button>
           </div>
@@ -166,3 +171,5 @@ export default class Navbar extends Component {
     );
   }
 }
+
+export default withRouter(Navbar);

@@ -4,6 +4,7 @@
 @import url("./elevation.css");
 @import url("./mobile-only.css");
 @import url("./pc-only.css");
+@import url("./anime.css");
 :root {
   --default-font-family: "Google Sans", sans-serif;
   --page-max-flex: 12;

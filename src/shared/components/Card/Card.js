@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Card.css";
 export default class Card extends Component {
   render() {
-    const { theme, img, text, title, link, linkText, hasFooter, mobile } =
+    const { theme, img, text, title, link, linkText, hasFooter, mobile , rootClassName} =
       this.props;
     if (mobile)
       return (
@@ -29,7 +29,7 @@ export default class Card extends Component {
         </div>
       );
     return (
-      <div className="card-container elevate-float">
+      <div className={`card-container elevate-float ${rootClassName}`}>
         <div className="card-img-container">
           <img
             className="m-card-img"
@@ -72,4 +72,5 @@ Card.defaultProps = {
   link: "#",
   linkText: "Download",
   hasFooter: false,
+  rootClassName:""
 };
