@@ -14,9 +14,12 @@ import PageTitle from "../../shared/components/Page Title/PageTitle";
 import "./LandingPage.css";
 import { CORE_COURSES } from "./values";
 import { getRandomAnimationClass } from "./../../shared/utils/utils";
+import facebook from "./../../assets/media/facebook.png";
+import google from "./../../assets/media/google.png";
+import coke from "./../../assets/media/coke.png";
+import microsoft from "./../../assets/media/microsoft.png";
 export default class LandingPage extends Component {
   render() {
-    console.log("O am tje index", getRandomAnimationClass());
     return (
       <div>
         <Navbar />
@@ -76,9 +79,14 @@ export default class LandingPage extends Component {
 
         {/* ----------------- ONLY ALU ------ */}
 
-        <PageTitle title="ONLY AT ALU" />
+        <PageTitle title="MEET OUR PARTNERS" tag="sponsors" />
 
-        <div className="only-at-alu"></div>
+        <div className="only-at-alu everyday-flex">
+          <img className="sponsor-logo" src={facebook} />
+          <img className="sponsor-logo" src={coke} />
+          <img className="sponsor-logo" src={google} />
+          <img className="sponsor-logo" src={microsoft} />
+        </div>
 
         {/* ----------- TESTIMONIALS --------- */}
 

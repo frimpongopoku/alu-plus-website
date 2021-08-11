@@ -3,15 +3,15 @@ import { AboutUs, Academics, StudentLife } from "./MenuDisplays";
 export const TOP_LINKS = [
   { name: "Donate", url: "#" },
 
-  { name: "Gallery", url: "#" },
+  { name: "Gallery", url: "/gallery" },
 
-  { name: "Staff", url: "#" },
+  { name: "Staff", url: "/gallery#staff" },
 ];
 
 export const STUDENT_LIFE_LINKS = [
-  { name: " What do people say about us? ", link: "#" },
-  { name: " Student Activities ", link: "#" },
-  { name: " Life After ALU", link: "#" },
+  { name: " What do people say about us? ", link: "/#testimonials" },
+  { name: " Student Activities ", link: "/gallery#student-activities" },
+  { name: " Life After ALU", link: "/gallery#student-life" },
 ];
 
 export const ACADEMICS_LINKS = [
@@ -22,7 +22,6 @@ export const ACADEMICS_LINKS = [
   {
     groupName: " Core Courses ",
     links: [
-      { name: "Academic Calendar", link: "/academics" },
       { name: "Entrpreneurial Leadership", link: "/academics" },
       { name: " Data & Decisions", link: "#" },
       { name: " Project Management", link: "#" },
@@ -30,7 +29,7 @@ export const ACADEMICS_LINKS = [
   },
   {
     groupName: "ALC Mauritius",
-    url:"mu",
+    url: "mu",
     links: [
       { name: "Computing", link: "#" },
       { name: " Engeneering Studies", link: "#" },
@@ -56,24 +55,23 @@ export const ABOUT_US_LINKS = [
     groupName: "Advantage",
     links: [
       { name: "The ALU Advantage", link: "/about" },
-      { name: " Our Mission", link: "/about" },
-      { name: " Life After ALU", link: "/about" },
+      { name: " Our Mission", link: "/about#hubs" },
+      { name: " Life After ALU", link: "/gallery" },
     ],
   },
   {
     groupName: "Meet US",
     links: [
-      { name: "The Staff", link: "#" },
-      { name: " Work @ALU", link: "#" },
-      { name: " The Founding Fathers", link: "#" },
+      { name: "The Staff", link: "/gallery#staff" },
+      { name: " The Founders", link: "/gallery#founders" },
     ],
   },
 
   {
     groupName: "Patnerships",
     links: [
-      { name: "ALU Partners", link: "#" },
-      { name: " Meet the creators of this platform", link: "#" },
+      { name: "ALU Partners", link: "/#sponsors" },
+      { name: " Meet the creators of this platform", link: "/creators" },
     ],
   },
 ];

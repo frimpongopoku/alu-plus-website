@@ -12,9 +12,19 @@
 }
 
 .only-at-alu {
+  padding: 10%;
   height: 760px;
-  background: var(--app-theme-blue);
+  /* background: var(--app-theme-blue); */
+  background: #fff4f4;
   width: 100%;
+  flex-wrap: wrap;
+}
+
+.sponsor-logo {
+  flex: 3;
+  width: 300px;
+  height: 250px;
+  object-fit: contain;
 }
 
 .landing-testimonials-container {

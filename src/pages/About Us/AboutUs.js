@@ -51,7 +51,7 @@ export default class AboutUs extends Component {
 
         <PageTitle title="WE DRIVE CHANGE IN AND OUT OF OUR COMMUNITIES" />
         <PageRow left={this.lefSide()} right={this.rightSide()} />
-        <PageTitle title="HUBS IN ALL CORNERS" />
+        <PageTitle title="HUBS IN ALL CORNERS" tag="hubs" />
         <PageRow
           leftSplit={8}
           rightSplit={4}

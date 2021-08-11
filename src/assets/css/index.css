@@ -15,6 +15,7 @@ html {
   font-family: var(--default-font-family);
   font-family: 400;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 P {
   line-height: 1.7;
