@@ -264,4 +264,17 @@
   .comment-item p {
     font-size: 0.85rem !important;
   }
+
+  .housing-image {
+    width: 100% !important;
+    height: 250px !important;
+  }
+
+  .mob-card-content h5 {
+    font-size: 1.15rem !important;
+  }
+
+  .camp-left-img{ 
+    height:200px !important;
+  }
 }
