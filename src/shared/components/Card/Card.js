@@ -2,7 +2,32 @@ import React, { Component } from "react";
 import "./Card.css";
 export default class Card extends Component {
   render() {
-    const { theme, img, text, title, link, linkText, hasFooter } = this.props;
+    const { theme, img, text, title, link, linkText, hasFooter, mobile } =
+      this.props;
+    if (mobile)
+      return (
+        <div className="mob-card">
+          <div
+            style={{ padding: 15 }}
+            className="mob-card-content card-content"
+          >
+            <h5 style={{ "--title-color": theme?.textColor || "black" }}>
+              {title}
+            </h5>
+            <p style={{ "--text-color": "#4e4e4e" }}>{text}</p>
+          </div>
+          {hasFooter && (
+            <div className="m-card-footer">
+              <a
+                style={{ "--action-color": theme?.actionColor || "maroon" }}
+                href={link}
+              >
+                {linkText}
+              </a>
+            </div>
+          )}
+        </div>
+      );
     return (
       <div className="card-container elevate-float">
         <div className="card-img-container">
@@ -20,12 +45,10 @@ export default class Card extends Component {
           ></div>
         </div>
         <div className="card-content">
-          <h5 style={{ "--title-color": theme?.titleColor || "black" }}>
+          <h5 style={{ "--title-color": theme?.textColor || "black" }}>
             {title}
           </h5>
-          <p style={{ "--text-color": theme?.textColor || "#4e4e4e" }}>
-            {text}
-          </p>
+          <p style={{ "--text-color": "#4e4e4e" }}>{text}</p>
         </div>
         {hasFooter && (
           <div className="m-card-footer">

@@ -1,0 +1,32 @@
+.housing-image {
+  flex: 4;
+  width: 400px;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 10px;
+  /* border: solid 4px transparent; */
+  margin: 10px;
+  cursor: pointer;
+}
+
+.housing-image:hover {
+  box-shadow: var(--elevate-5);
+  transition: 0.3s ease-in-out;
+}
+
+.housing-image:active {
+  transform: scale(1.7);
+  transition: 0.2s ease-in-out;
+}
+
+.camp-left-img {
+  margin-bottom: 15px;
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 430px;
+}
+
+/* .camp-right p {
+  font-size: 1.2rem;
+} */
