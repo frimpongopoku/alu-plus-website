@@ -57,6 +57,7 @@ export default class Hero extends Component {
             style={imageStyle}
             src={image || backImage}
             className="hero-sizing hero-back-image"
+            alt="social media icon"
           />
         </div>
         <div

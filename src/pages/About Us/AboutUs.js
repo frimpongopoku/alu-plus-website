@@ -11,9 +11,9 @@ export default class AboutUs extends Component {
     return (
       <div className="everyday-flex">
         <img
-          className="sole-image"
           src={params.image || "https://via.placeholder.com/300"}
-          className="camp-left-img"
+          className="camp-left-img sole-image"
+          alt=" alu students"
         />
       </div>
     );
@@ -81,18 +81,21 @@ export default class AboutUs extends Component {
               <img
                 src="https://pbs.twimg.com/media/E2OrKTmWEAArFBw?format=jpg&name=medium"
                 className="image-in-view"
+                alt=" alu students"
               />
             </center>
           </div>
           <div className="image-shelf">
-            {IMAGE_SHELF.map((img, index) => (
-              <img
-                key={index.toString()}
-                className="img-item"
-                src={img.small}
-                alt="shelf media"
-              />
-            ))}
+            {IMAGE_SHELF.map((img, index) => {
+              return (
+                <img
+                  key={index.toString()}
+                  className="img-item"
+                  src={img.small}
+                  alt="shelf media"
+                />
+              );
+            })}
           </div>
         </div>
 

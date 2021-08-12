@@ -12,7 +12,7 @@ import Hero from "../../shared/components/Hero/Hero";
 import Navbar from "../../shared/components/Navbar/Navbar";
 import PageTitle from "../../shared/components/Page Title/PageTitle";
 import "./LandingPage.css";
-import { CONTACT_FORM, CORE_COURSES, PAGE_DATA } from "./values";
+import { CONTACT_FORM, CORE_COURSES } from "./values";
 import { getRandomAnimationClass } from "./../../shared/utils/utils";
 import facebook from "./../../assets/media/facebook.png";
 import google from "./../../assets/media/google.png";
@@ -89,10 +89,10 @@ export default class LandingPage extends Component {
         <PageTitle title="MEET OUR PARTNERS" tag="sponsors" />
 
         <div className="only-at-alu everyday-flex">
-          <img className="sponsor-logo" src={facebook} />
-          <img className="sponsor-logo" src={coke} />
-          <img className="sponsor-logo" src={google} />
-          <img className="sponsor-logo" src={microsoft} />
+          <img className="sponsor-logo" src={facebook} alt="social media icon"/>
+          <img className="sponsor-logo" src={coke} alt="social media icon"/>
+          <img className="sponsor-logo" src={google} alt="social media icon"/>
+          <img className="sponsor-logo" src={microsoft} alt="social media icon"/>
         </div>
 
         {/* ----------- TESTIMONIALS --------- */}

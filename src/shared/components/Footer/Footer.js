@@ -31,8 +31,12 @@ export default class Footer extends Component {
               <h4 className="footer-column-title">QUICK LINKS</h4>
 
               <div style={{ width: "100%" }}>
-                {QUICK_LINKS.map((link) => (
-                  <a href={link.url} className="footer-link">
+                {QUICK_LINKS.map((link, index) => (
+                  <a
+                    href={link.url}
+                    className="footer-link"
+                    key={index.toString()}
+                  >
                     <FontAwesomeIcon icon={faCaretRight} /> {link.name}
                   </a>
                 ))}
@@ -142,8 +146,12 @@ export default class Footer extends Component {
               <h4 className="footer-column-title">QUICK LINKS</h4>
 
               <div style={{ width: "100%" }}>
-                {QUICK_LINKS.map((link) => (
-                  <a href={link.url} className="footer-link">
+                {QUICK_LINKS.map((link, index) => (
+                  <a
+                    href={link.url}
+                    className="footer-link"
+                    key={index.toString()}
+                  >
                     <FontAwesomeIcon icon={faCaretRight} /> {link.name}
                   </a>
                 ))}

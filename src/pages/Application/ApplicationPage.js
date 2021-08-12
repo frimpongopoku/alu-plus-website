@@ -36,6 +36,8 @@ export default class ApplicationPage extends Component {
                   <Dropdown {...value} />
                 </div>
               );
+
+            return <></>;
           })}
           <div className="everyday-flex" style={{ justifyContent: "flex-end" }}>
             <button

@@ -9,6 +9,8 @@ export const POLICIES = [
     porta.`,
       link: "#",
       theme: { textColor: "#98002E", overlayColor: "#C85454", actionColor: "" },
+      image:
+        "https://pbs.twimg.com/media/EwJEhR9XcAEnz7L?format=jpg&name=small",
     },
     {
       name: "Attendance",
@@ -19,6 +21,8 @@ export const POLICIES = [
     porta.`,
       link: "#",
       theme: { textColor: "#A19E48", overlayColor: "#C8C354", actionColor: "" },
+      image:
+        "https://pbs.twimg.com/media/EtUZTWmWYBM86-h?format=jpg&name=small",
     },
     {
       name: "Data Protection",
@@ -29,6 +33,8 @@ export const POLICIES = [
     porta.`,
       link: "#",
       theme: { textColor: "#00983D", overlayColor: "#00983D", actionColor: "" },
+      image:
+        "https://pbs.twimg.com/media/EoyilXVXUAE8F3m?format=jpg&name=small",
     },
   ],
   [
@@ -41,6 +47,8 @@ export const POLICIES = [
     porta.`,
       link: "#",
       theme: { textColor: "#750B77", overlayColor: "#750B77", actionColor: "" },
+      image:
+        "https://pbs.twimg.com/media/EoGEdqEXUAM3fZa?format=jpg&name=small",
     },
     {
       name: "Quality Management",
@@ -51,6 +59,8 @@ export const POLICIES = [
     porta.`,
       link: "#",
       theme: { textColor: "#98002E", overlayColor: "#C85454", actionColor: "" },
+      image:
+        "https://pbs.twimg.com/media/EoGEdqEXUAM3fZa?format=jpg&name=small",
     },
     {
       name: "Credit Transfer",
@@ -61,6 +71,8 @@ export const POLICIES = [
     porta.`,
       link: "#",
       theme: { textColor: "#488CA1", overlayColor: "#0B4177", actionColor: "" },
+      image:
+        "https://pbs.twimg.com/media/EoGEdqEXUAM3fZa?format=jpg&name=small",
     },
   ],
   [
@@ -73,6 +85,8 @@ export const POLICIES = [
     porta.`,
       link: "#",
       theme: { textColor: "#984000", overlayColor: "#0B4177", actionColor: "" },
+      image:
+        "https://pbs.twimg.com/media/Ejk74M5XkAAbAIr?format=jpg&name=small",
     },
     {
       name: "Student Finance",
@@ -83,6 +97,8 @@ export const POLICIES = [
     porta.`,
       link: "#",
       theme: { textColor: "#CA1010", overlayColor: "#0B4177", actionColor: "" },
+      image:
+        "https://pbs.twimg.com/media/EjQSZotWsAQvsPb?format=jpg&name=small",
     },
     {
       name: "Internships",
@@ -93,6 +109,8 @@ export const POLICIES = [
     porta.`,
       link: "#",
       theme: { textColor: "#E8BD27", overlayColor: "#0B4177", actionColor: "" },
+      image:
+        "https://pbs.twimg.com/media/EjQSZotWsAQvsPb?format=jpg&name=small",
     },
   ],
 ];

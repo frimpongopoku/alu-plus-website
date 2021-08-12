@@ -14,6 +14,7 @@ export default class Creators extends Component {
           className="team-mate-img"
           style={{ borderColor: params.color }}
           src={params.img}
+          alt="site media"
         />
       </div>
     );
@@ -34,8 +35,11 @@ export default class Creators extends Component {
           </div>
           <div
             className="everyday-flex team-member-country"
-            style={{ flexDirection: "row-reverse" }}
-            style={{ flex: "6", justifyContent: "flex-end" }}
+            style={{
+              flex: "6",
+              justifyContent: "flex-end",
+              flexDirection: "row-reverse",
+            }}
           >
             {params.country}
           </div>

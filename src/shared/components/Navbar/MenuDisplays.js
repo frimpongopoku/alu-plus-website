@@ -1,6 +1,6 @@
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { Component } from "react";
+import React from "react";
 // import { Link } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import MUImage from "./../../../assets/media/alu-mauri.jpeg";
@@ -11,7 +11,7 @@ export const StudentLife = () => {
     <>
       {/* --------------- MAURITIUS ----------- */}
       <div className="image-menu-card">
-        <img alt="menu-image" src={MUImage} />
+        <img alt="media" src={MUImage} />
         <h6
           style={{
             margin: "11px 3px",
@@ -36,7 +36,7 @@ export const StudentLife = () => {
       </div>
       {/* -------------- RWANDA ------------------ */}
       <div className="image-menu-card">
-        <img alt="menu-image" src={RWImage} />
+        <img  src={RWImage} alt="medai" />
         <h6
           style={{
             margin: "11px 3px",

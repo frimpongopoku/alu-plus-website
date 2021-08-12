@@ -8,10 +8,10 @@ import PageTitle from "../../shared/components/Page Title/PageTitle";
 import "./CampusPage.css";
 import { PICTURES, POLICIES } from "./values";
 import athena from "./../../assets/media/athena.jpeg";
-var disqus_config = () => {
-  this.page.url = "/apply";
-  this.page.identifier = "application-page";
-};
+// var disqus_config = () => {
+//   this.page.url = "/apply";
+//   this.page.identifier = "application-page";
+// };
 export default class CampusPage extends Component {
   initDisqus() {
     var d = document,
@@ -88,6 +88,7 @@ export default class CampusPage extends Component {
                   key={ind.toString()}
                   src={image.url}
                   className="housing-image"
+                  alt="students"
                 />
               ))}
             </div>
@@ -132,6 +133,7 @@ export default class CampusPage extends Component {
                   key={ind.toString()}
                 >
                   <Card
+                    img={policy.image}
                     title={policy.name}
                     text={policy.description}
                     hasFooter

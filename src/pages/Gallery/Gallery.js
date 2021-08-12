@@ -23,6 +23,7 @@ export default class Gallery extends Component {
                     key={ind.toString()}
                     src={item || "https://via.placeholder.com/300"}
                     className="gallery-img elevate-1-half"
+                    alt="site media"
                   />
                 ))}
               </div>

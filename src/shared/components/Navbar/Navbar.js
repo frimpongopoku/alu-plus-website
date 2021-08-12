@@ -88,6 +88,7 @@ class Navbar extends Component {
                 style={{ height: 120, marginTop: -12 }}
                 src={logo}
                 onClick={() => this.props.history.push("/")}
+                alt="media"
               />
             </div>
 

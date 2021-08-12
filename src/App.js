@@ -8,8 +8,7 @@ import Creators from "./pages/Creators/Creators";
 import Error from "./pages/Error/Error";
 import Gallery from "./pages/Gallery/Gallery";
 import LandingPage from "./pages/Landing/LandingPage";
-import Playground from "./pages/Playground";
-import StudentLife from "./pages/Student Life/StudentLife";
+
 
 class App extends Component {
   render() {

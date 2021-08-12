@@ -7,7 +7,7 @@ export const MobileNav = (props) => {
   return (
     <div className="elevate-float mobile-nav-main-container vanish-on-pc">
       <div style={{ flex: "4" }}>
-        <img className="mobile-nav-logo" src={logo} onClick={() => goHome()} />
+        <img className="mobile-nav-logo" src={logo} onClick={() => goHome()} alt="media" />
       </div>
 
       <div
@@ -55,7 +55,7 @@ export const MobileSideBar = (props) => {
             <div key={index.toString()} className="mobile-side-link">
               {item.hasChildren ? (
                 <a
-                  href="#"
+                  href="#void"
                   onClick={(e) =>
                     showBlanket(e, {
                       id: item.id,
@@ -81,7 +81,7 @@ export const MobileSideBar = (props) => {
           }}
         >
           <a
-            href="#"
+            href="#void"
             className="mobile-side-close-btn"
             onClick={(e) => {
               e.preventDefault();
@@ -101,7 +101,7 @@ export const MobileSideBar = (props) => {
 };
 
 export const MobileBlanket = (props) => {
-  const { toggled, toggleSidebar, title } = props;
+  const { title } = props;
   return (
     <div className="mobile-blanket">
       <div style={{ display: "flex", flexDirection: "column" }}>
