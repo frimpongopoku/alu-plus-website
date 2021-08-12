@@ -38,7 +38,7 @@ export default class Creators extends Component {
             style={{
               flex: "6",
               justifyContent: "flex-end",
-              flexDirection: "row-reverse",
+              // flexDirection: "row-reverse",
             }}
           >
             {params.country}
