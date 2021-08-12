@@ -3,6 +3,7 @@ import "./Hero.css";
 import backImage from "./../../../assets/media/back-grad.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
+import { HashLink as Link } from "react-router-hash-link";
 export default class Hero extends Component {
   constructor(props) {
     super(props);
@@ -97,9 +98,9 @@ export default class Hero extends Component {
                   <p className="hero-subtitle">{subtitle}</p>
 
                   {linkText && link && (
-                    <a href={link} className="">
+                    <Link to={link} className="">
                       {linkText} <FontAwesomeIcon icon={faLongArrowAltRight} />
-                    </a>
+                    </Link>
                   )}
                 </>
               ) : (

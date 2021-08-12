@@ -63,9 +63,9 @@
 }
 
 .skewed-box {
-  position: fixed;
+  position: absolute;
   left: 0;
-  top: -51%;
+  top: -166%;
   width: 100%;
   height: 55vh;
   background: var(--skewed-background);
