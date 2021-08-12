@@ -7,7 +7,24 @@ import PageRow from "../../shared/components/Page Row/PageRow";
 import PageTitle from "../../shared/components/Page Title/PageTitle";
 import "./CampusPage.css";
 import { POLICIES } from "./values";
+
+var disqus_config = () => {
+  this.page.url = "/apply";
+  this.page.identifier = "application-page";
+};
 export default class CampusPage extends Component {
+  initDisqus() {
+    var d = document,
+      s = d.createElement("script");
+    s.src = "https://ip-group-3-faso.disqus.com/embed.js";
+    s.setAttribute("data-timestamp", +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+
+  componentDidMount() {
+    this.initDisqus();
+  }
+
   left() {
     return (
       <div className="everyday-flex ">
@@ -131,6 +148,14 @@ export default class CampusPage extends Component {
           ))}
         </div>
 
+        <PageTitle
+          title="ADVICE"
+          subtitle="Are you already a student? Leave a message to the upcoming leaders"
+          tag="advice"
+        />
+        <div className="col-md-8 offset-md-2">
+          <div id="disqus_thread"></div>
+        </div>
         <Footer />
       </div>
     );

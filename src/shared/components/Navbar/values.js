@@ -11,7 +11,7 @@ export const TOP_LINKS = [
 export const STUDENT_LIFE_LINKS = [
   { name: " What do people say about us? ", link: "/#testimonials" },
   { name: " Student Activities ", link: "/gallery#student-activities" },
-  { name: " Life After ALU", link: "/gallery#student-life" },
+  { name: " Leave an advice to incoming students", link: "/campus/mu#advice" },
 ];
 
 export const ACADEMICS_LINKS = [

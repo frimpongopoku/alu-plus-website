@@ -4,7 +4,9 @@ import Navbar from "../../shared/components/Navbar/Navbar";
 import PageTitle from "../../shared/components/Page Title/PageTitle";
 import "./ApplicationPage.css";
 import { FORM } from "./values";
+
 export default class ApplicationPage extends Component {
+
   render() {
     return (
       <div>
@@ -49,7 +51,11 @@ export default class ApplicationPage extends Component {
             </button>
           </div>
         </div>
-        <PageTitle
+
+        
+
+        {/* -------------- DISCUSSION AREA ----------------- */}
+        {/* <PageTitle
           title="ASK US YOUR QUESTIONS"
           subtitle="The questions you ask here will be public "
         />
@@ -114,7 +120,7 @@ export default class ApplicationPage extends Component {
               </p>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     );
   }
