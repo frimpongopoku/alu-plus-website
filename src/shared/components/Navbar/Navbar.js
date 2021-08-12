@@ -63,7 +63,7 @@ class Navbar extends Component {
 
             <div className="top-creators">
               <Link to="/creators" className="top-bar-link">
-                About Creators
+                AUTHOURS
               </Link>
             </div>
           </div>

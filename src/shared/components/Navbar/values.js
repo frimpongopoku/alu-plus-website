@@ -1,7 +1,7 @@
 import { AboutUs, Academics, StudentLife } from "./MenuDisplays";
 
 export const TOP_LINKS = [
-  { name: "Donate", url: "#" },
+  { name: "Contact", url: "/#contact-us" },
 
   { name: "Gallery", url: "/gallery" },
 
