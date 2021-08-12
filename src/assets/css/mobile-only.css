@@ -92,7 +92,7 @@
     padding: 7px 25px !important;
   }
   .hero-sizing {
-    height: 30vh;
+    height: 100%;
   }
 
   .page-title {
@@ -300,5 +300,13 @@
 
   .page-column {
     padding: 0px !important;
+  }
+
+  .hero-back-image {
+    height: 200px !important;
+  }
+
+  .root-hero {
+    margin-top: 21% !important;
   }
 }

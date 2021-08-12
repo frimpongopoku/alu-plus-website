@@ -34,6 +34,7 @@
   /* height: 35vh;
   width: 100vw; */
   object-position: top;
+  height: 370px !important;
 }
 
 .hero-content a {
@@ -102,5 +103,10 @@
 .hero-sizing {
   /* background: black; */
   width: 100vw;
-  height: 35vh;
+  height: 100%;
+}
+
+.root-hero {
+  position: relative;
+  margin-top: 9%;
 }
