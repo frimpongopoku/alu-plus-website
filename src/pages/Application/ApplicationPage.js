@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Footer from "../../shared/components/Footer/Footer";
 import Hero from "../../shared/components/Hero/Hero";
 import Navbar from "../../shared/components/Navbar/Navbar";
 import PageTitle from "../../shared/components/Page Title/PageTitle";
@@ -6,7 +7,6 @@ import "./ApplicationPage.css";
 import { FORM } from "./values";
 
 export default class ApplicationPage extends Component {
-
   render() {
     return (
       <div>
@@ -52,7 +52,7 @@ export default class ApplicationPage extends Component {
           </div>
         </div>
 
-        
+        <Footer />
 
         {/* -------------- DISCUSSION AREA ----------------- */}
         {/* <PageTitle

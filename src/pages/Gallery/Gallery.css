@@ -5,11 +5,11 @@
   border-radius: 10px;
   margin-left: -70px;
   cursor: pointer;
-  margin-top:20px; 
-  margin-bottom:10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
-.gallery-shelf { 
-  flex-wrap:wrap;
+.gallery-shelf {
+  flex-wrap: wrap;
 }
 .gallery-shelf:hover .gallery-img {
   margin-left: 80px;
@@ -22,7 +22,9 @@
   transition: 0.2s ease-out;
 }
 
-.gallery-img:active{ 
+.gallery-img:active {
+  object-fit: contain;
+  z-index: 10;
   transform: scale(1.6);
   transition: 0.2s ease-out;
 }

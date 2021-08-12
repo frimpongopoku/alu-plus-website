@@ -5,14 +5,14 @@ import Navbar from "../../shared/components/Navbar/Navbar";
 import PageRow from "../../shared/components/Page Row/PageRow";
 import PageTitle from "../../shared/components/Page Title/PageTitle";
 import "./AboutUs.css";
-import { COURSES } from "./values";
+import { COURSES, IMAGE_SHELF } from "./values";
 export default class AboutUs extends Component {
-  lefSide() {
+  lefSide(params) {
     return (
       <div className="everyday-flex">
         <img
           className="sole-image"
-          src="https://via.placeholder.com/300"
+          src={params.image || "https://via.placeholder.com/300"}
           className="camp-left-img"
         />
       </div>
@@ -48,21 +48,30 @@ export default class AboutUs extends Component {
       <div>
         <Navbar />
         <Navbar />
-        <Hero title="ABOUT US" subtitle="Nurturing the african leaders" />
+        <Hero
+          title="ABOUT US"
+          subtitle="Nurturing the african leaders"
+          image="https://www.alueducation.com/wp-content/uploads/2021/04/mc-banner-home.jpg"
+          imageStyle={{ objectPosition: "center" }}
+        />
 
         <PageTitle title="WE DRIVE CHANGE IN AND OUT OF OUR COMMUNITIES" />
-        <PageRow left={this.lefSide()} right={this.rightSide()} />
+        <PageRow
+          left={this.lefSide({
+            image:
+              "https://pbs.twimg.com/media/E1xFeUiXMAIBj9u?format=jpg&name=small",
+          })}
+          right={this.rightSide()}
+        />
         <PageTitle title="HUBS IN ALL CORNERS" tag="hubs" />
         <PageRow
           leftSplit={8}
           rightSplit={4}
           left={this.rightSide()}
-          right={
-            <img
-              className="sole-image camp-left-img"
-              src="https://via.placeholder.com/300"
-            />
-          }
+          right={this.lefSide({
+            image:
+              "https://pbs.twimg.com/media/E1xFeUlWYAE4C-g?format=jpg&name=small",
+          })}
         />
 
         <PageTitle title="FRUITFULL EXPERIENCES WHILE SOLVING AFRICA'S PROBLEMS" />
@@ -70,17 +79,18 @@ export default class AboutUs extends Component {
           <div className="row">
             <center style={{ width: "100%" }}>
               <img
-                src="https://via.placeholder.com/600"
+                src="https://pbs.twimg.com/media/E2OrKTmWEAArFBw?format=jpg&name=medium"
                 className="image-in-view"
               />
             </center>
           </div>
           <div className="image-shelf">
-            {[1, 2, 3].map((img, index) => (
+            {IMAGE_SHELF.map((img, index) => (
               <img
                 key={index.toString()}
                 className="img-item"
-                src="https://via.placeholder.com/300"
+                src={img.small}
+                alt="shelf media"
               />
             ))}
           </div>
@@ -111,7 +121,7 @@ export default class AboutUs extends Component {
         </div>
         {/* ------------------ COURSE OVERVIEW --------------- */}
 
-        <PageTitle title="COURSE OVERVIEW" />
+        <PageTitle title="COURSE OVERVIEW" tag="courses" />
         <div className="col-md-8 offset-md-2 ">
           {COURSES.map((course, index) => (
             <div

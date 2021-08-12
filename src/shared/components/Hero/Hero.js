@@ -38,12 +38,26 @@ export default class Hero extends Component {
   }
   render() {
     this.scrollCheckFxn();
-    const { theme, skewed, title, subtitle, link, linkText, Jsx } = this.props;
+    const {
+      theme,
+      skewed,
+      title,
+      subtitle,
+      link,
+      linkText,
+      Jsx,
+      image,
+      imageStyle,
+    } = this.props;
 
     return (
-      <div style={{ position: "relative", marginTop: "10vh" }}  ref={this.gbemi}>
+      <div style={{ position: "relative", marginTop: "10vh" }} ref={this.gbemi}>
         <div className="hero-sizing hero-background">
-          <img src={backImage} className="hero-sizing hero-back-image" />
+          <img
+            style={imageStyle}
+            src={image || backImage}
+            className="hero-sizing hero-back-image"
+          />
         </div>
         <div
           className="hero-sizing hero-trans-layer"
@@ -105,4 +119,5 @@ Hero.defaultProps = {
   link: "#",
   linkText: "OUR PROGRAMS",
   Jsx: null,
+  imageStyle: {},
 };

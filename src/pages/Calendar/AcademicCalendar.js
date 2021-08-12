@@ -37,7 +37,7 @@ export default class AcademicCalendar extends Component {
                   </div>
                 </div>
                 {card.dates.map((list, ind) => (
-                  <>
+                  <div key={ind.toString()}>
                     <p
                       key={ind.toString()}
                       style={{
@@ -65,7 +65,7 @@ export default class AcademicCalendar extends Component {
                         </div>
                       </div>
                     ))}
-                  </>
+                  </div>
                 ))}
               </div>
             </div>

@@ -19,6 +19,9 @@ class Navbar extends Component {
     this.showDropdown = this.showDropdown.bind(this);
   }
 
+
+  
+
   showDropdown(e, params) {
     e.preventDefault();
     if (!params) return;
@@ -63,7 +66,7 @@ class Navbar extends Component {
 
             <div className="top-creators">
               <Link to="/creators" className="top-bar-link">
-                AUTHOURS
+                AUTHORS
               </Link>
             </div>
           </div>

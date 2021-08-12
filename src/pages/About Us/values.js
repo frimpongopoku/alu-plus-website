@@ -207,3 +207,18 @@ export const COURSES = [
     `,
   },
 ];
+
+export const IMAGE_SHELF = [
+  {
+    small: "https://pbs.twimg.com/media/E2OrKTmWEAArFBw?format=jpg&name=small",
+    large: "https://pbs.twimg.com/media/E2OrKTmWEAArFBw?format=jpg&name=medium",
+  },
+  {
+    small: "https://pbs.twimg.com/media/E2OrKCcXoAU8rFY?format=jpg&name=small",
+    large: "https://pbs.twimg.com/media/E2OrKCcXoAU8rFY?format=jpg&name=medium",
+  },
+  {
+    small: "https://pbs.twimg.com/media/E2OrKdEX0AIR_2I?format=jpg&name=small",
+    large: "https://pbs.twimg.com/media/E2OrKdEX0AIR_2I?format=jpg&name=medium",
+  },
+];

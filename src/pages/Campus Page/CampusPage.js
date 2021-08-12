@@ -6,8 +6,8 @@ import Navbar from "../../shared/components/Navbar/Navbar";
 import PageRow from "../../shared/components/Page Row/PageRow";
 import PageTitle from "../../shared/components/Page Title/PageTitle";
 import "./CampusPage.css";
-import { POLICIES } from "./values";
-
+import { PICTURES, POLICIES } from "./values";
+import athena from "./../../assets/media/athena.jpeg";
 var disqus_config = () => {
   this.page.url = "/apply";
   this.page.identifier = "application-page";
@@ -28,7 +28,7 @@ export default class CampusPage extends Component {
   left() {
     return (
       <div className="everyday-flex ">
-        <img src="http://via.placeholder.com/300" className="camp-left-img" />
+        <img src={athena} className="camp-left-img" alt="paragraph media" />
       </div>
     );
   }
@@ -67,7 +67,9 @@ export default class CampusPage extends Component {
 
         <Hero
           title="Mauritius Campus"
-          subtitle="Welcome to the island of jellyfish"
+          subtitle="Welcome to the island of jellyfishes"
+          image="https://www.alueducation.com/wp-content/uploads/2021/05/NR-impact-banner.jpg"
+          imageStyle={{ objectPosition: "center" }}
         />
 
         <PageTitle title="#TheIslandIsMyCampus" />
@@ -75,10 +77,7 @@ export default class CampusPage extends Component {
         <PageTitle title="HOUSING" />
         <PageRow leftSplit={12} rightSplit={0} left={this.right()} />
         <div className="col-md-8 offset-md-2">
-          {[
-            [1, 2, 3],
-            [1, 2, 3],
-          ].map((item, index) => (
+          {PICTURES.map((item, index) => (
             <div
               className="everyday-flex"
               style={{ flexWrap: "wrap" }}
@@ -87,7 +86,7 @@ export default class CampusPage extends Component {
               {item.map((image, ind) => (
                 <img
                   key={ind.toString()}
-                  src="https://via.placeholder.com/300"
+                  src={image.url}
                   className="housing-image"
                 />
               ))}

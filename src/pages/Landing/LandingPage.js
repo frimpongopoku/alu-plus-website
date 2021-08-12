@@ -12,7 +12,7 @@ import Hero from "../../shared/components/Hero/Hero";
 import Navbar from "../../shared/components/Navbar/Navbar";
 import PageTitle from "../../shared/components/Page Title/PageTitle";
 import "./LandingPage.css";
-import { CONTACT_FORM, CORE_COURSES } from "./values";
+import { CONTACT_FORM, CORE_COURSES, PAGE_DATA } from "./values";
 import { getRandomAnimationClass } from "./../../shared/utils/utils";
 import facebook from "./../../assets/media/facebook.png";
 import google from "./../../assets/media/google.png";
@@ -28,6 +28,8 @@ export default class LandingPage extends Component {
           title="AFRICAN LEADERSHIP UNIVERSITY"
           subtitle="Get the education that is built around the impact you want"
           skewed={false}
+          link="/about#courses"
+          // image={PAGE_DATA.backgroundImage}
         />
         <PageTitle />
 
@@ -41,6 +43,10 @@ export default class LandingPage extends Component {
                 <Card
                   title={item.name}
                   rootClassName={getRandomAnimationClass()}
+                  img={item.image}
+                  linkText="Read More"
+                  link={item.link}
+                  hasFooter
                 />
               </div>
             ))}

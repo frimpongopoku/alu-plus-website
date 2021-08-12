@@ -31,6 +31,7 @@
 .image-in-view {
   width: 100%;
   object-fit: cover;
+  object-position: top;
   height: 600px;
   border-radius: 8px;
 }

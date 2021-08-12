@@ -21,7 +21,7 @@ export default class Gallery extends Component {
                 {sec.pics.map((item, ind) => (
                   <img
                     key={ind.toString()}
-                    src="https://via.placeholder.com/300"
+                    src={item || "https://via.placeholder.com/300"}
                     className="gallery-img elevate-1-half"
                   />
                 ))}

@@ -17,7 +17,7 @@ import { QUICK_LINKS } from "./values";
 export default class Footer extends Component {
   render() {
     return (
-      <div className="footer-container" style={{marginTop:"10%"}}>
+      <div className="footer-container" style={{ marginTop: "10%" }}>
         <div className="row" style={{ height: "100%" }}>
           <div
             className="col-md-3 footer-column vanish-on-pc"
@@ -58,10 +58,38 @@ export default class Footer extends Component {
               </div>
 
               <div className="footer-socials" style={{ padding: 6 }}>
-                <FontAwesomeIcon icon={faFacebookF} className="footer-icon" />
-                <FontAwesomeIcon icon={faInstagram} className="footer-icon" />
-                <FontAwesomeIcon icon={faTwitter} className="footer-icon" />
-                <FontAwesomeIcon icon={faLinkedinIn} className="footer-icon" />
+                <a
+                  href="https://www.facebook.com/alueducation/"
+                  style={{ textDecoration: "none" }}
+                >
+                  <FontAwesomeIcon
+                    icon={faFacebookF}
+                    className="footer-icon"
+                    target="_blank"
+                  />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/alueducation/"
+                  style={{ textDecoration: "none" }}
+                >
+                  <FontAwesomeIcon icon={faInstagram} className="footer-icon" />
+                </a>
+                <a
+                  href="https://twitter.com/alueducation"
+                  style={{ textDecoration: "none" }}
+                >
+                  <FontAwesomeIcon icon={faTwitter} className="footer-icon" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/school/alueducation/"
+                  style={{ textDecoration: "none" }}
+                >
+                  <FontAwesomeIcon
+                    icon={faLinkedinIn}
+                    className="footer-icon"
+                  />
+                </a>
               </div>
 
               <div className="subscription-area">
@@ -85,18 +113,18 @@ export default class Footer extends Component {
             <div className="footer-content-wrapper">
               <h4 className="footer-column-title">ABOUT US</h4>
               <p className="footer-about-us">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                proin vitae morbi quis dui. Tortor, sit lacus, nibh mauris
-                sagittis, libero, senectus nulla. Tellus mattis nulla non vitae
-                libero, ac volutpat. Pulvinar lobortis nec fermentum cursus at
-                mattis integer elementum tortor. Tellus nulla diam pellentesque
-                dictum non suspendisse. Mauris etiam magnis Lorem ipsum dolor
+                Students choose ALU because they want hands-on real world
+                experience led by some of the world’s most innovative educators.
+                They want a place that does not limit their potential with old
+                rules but believes in their capacity to solve Africa’s largest
+                challenges in new ways. They want their time at a university to
+                lead them to a job or even to launch a company. They want to be
+                part of a global network committed to their success. Simply put,
+                they want a university that will prepare them to be the leaders
+                who will transform Africa. <br />
                 sit amet, consectetur adipiscing elit. Integer proin vitae morbi
                 quis dui. Tortor, sit lacus, nibh mauris sagittis, libero,
-                senectus nulla. Tellus mattis nulla non vitae libero, ac
-                volutpat. Pulvinar lobortis nec fermentum cursus at mattis
-                integer elementum tortor. Tellus nulla diam pellentesque dictum
-                non suspendisse. Mauris etiam magnis
+                senectus nulla. Tellus mattis magnis
               </p>
             </div>
           </div>

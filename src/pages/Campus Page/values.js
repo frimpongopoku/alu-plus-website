@@ -8,7 +8,7 @@ export const POLICIES = [
     cursus ullamcorper. Amet lectus pretium sit iaculis. Purus elit leo eu
     porta.`,
       link: "#",
-      theme: {textColor:"#98002E", overlayColor:"#C85454", actionColor:""},
+      theme: { textColor: "#98002E", overlayColor: "#C85454", actionColor: "" },
     },
     {
       name: "Attendance",
@@ -18,7 +18,7 @@ export const POLICIES = [
     cursus ullamcorper. Amet lectus pretium sit iaculis. Purus elit leo eu
     porta.`,
       link: "#",
-      theme: {textColor:"#A19E48", overlayColor:"#C8C354", actionColor:""},
+      theme: { textColor: "#A19E48", overlayColor: "#C8C354", actionColor: "" },
     },
     {
       name: "Data Protection",
@@ -28,7 +28,7 @@ export const POLICIES = [
     cursus ullamcorper. Amet lectus pretium sit iaculis. Purus elit leo eu
     porta.`,
       link: "#",
-      theme: {textColor:"#00983D", overlayColor:"#00983D", actionColor:""},
+      theme: { textColor: "#00983D", overlayColor: "#00983D", actionColor: "" },
     },
   ],
   [
@@ -40,7 +40,7 @@ export const POLICIES = [
     cursus ullamcorper. Amet lectus pretium sit iaculis. Purus elit leo eu
     porta.`,
       link: "#",
-      theme: {textColor:"#750B77", overlayColor:"#750B77", actionColor:""},
+      theme: { textColor: "#750B77", overlayColor: "#750B77", actionColor: "" },
     },
     {
       name: "Quality Management",
@@ -50,7 +50,7 @@ export const POLICIES = [
     cursus ullamcorper. Amet lectus pretium sit iaculis. Purus elit leo eu
     porta.`,
       link: "#",
-      theme: {textColor:"#98002E", overlayColor:"#C85454", actionColor:""},
+      theme: { textColor: "#98002E", overlayColor: "#C85454", actionColor: "" },
     },
     {
       name: "Credit Transfer",
@@ -60,7 +60,7 @@ export const POLICIES = [
     cursus ullamcorper. Amet lectus pretium sit iaculis. Purus elit leo eu
     porta.`,
       link: "#",
-      theme: {textColor:"#488CA1", overlayColor:"#0B4177", actionColor:""},
+      theme: { textColor: "#488CA1", overlayColor: "#0B4177", actionColor: "" },
     },
   ],
   [
@@ -72,7 +72,7 @@ export const POLICIES = [
     cursus ullamcorper. Amet lectus pretium sit iaculis. Purus elit leo eu
     porta.`,
       link: "#",
-      theme: {textColor:"#984000", overlayColor:"#0B4177", actionColor:""},
+      theme: { textColor: "#984000", overlayColor: "#0B4177", actionColor: "" },
     },
     {
       name: "Student Finance",
@@ -82,7 +82,7 @@ export const POLICIES = [
     cursus ullamcorper. Amet lectus pretium sit iaculis. Purus elit leo eu
     porta.`,
       link: "#",
-      theme: {textColor:"#CA1010", overlayColor:"#0B4177", actionColor:""},
+      theme: { textColor: "#CA1010", overlayColor: "#0B4177", actionColor: "" },
     },
     {
       name: "Internships",
@@ -92,7 +92,32 @@ export const POLICIES = [
     cursus ullamcorper. Amet lectus pretium sit iaculis. Purus elit leo eu
     porta.`,
       link: "#",
-      theme: {textColor:"#E8BD27", overlayColor:"#0B4177", actionColor:""},
+      theme: { textColor: "#E8BD27", overlayColor: "#0B4177", actionColor: "" },
+    },
+  ],
+];
+
+export const PICTURES = [
+  [
+    {
+      url: "https://pbs.twimg.com/media/E2OrKCcXoAU8rFY?format=jpg&name=small",
+    },
+    {
+      url: "https://pbs.twimg.com/media/E4RICi3WYAMQSK5?format=jpg&name=small",
+    },
+    {
+      url: "https://pbs.twimg.com/media/E4RICjLWQAQEssK?format=jpg&name=small",
+    },
+  ],
+  [
+    {
+      url: "https://pbs.twimg.com/media/E4RIClWWUAc8Bbs?format=jpg&name=small",
+    },
+    {
+      url: "https://pbs.twimg.com/media/E3n-3OIWYAA8ccT?format=jpg&name=small",
+    },
+    {
+      url: "https://pbs.twimg.com/media/E2zfd5mXwAYqyEf?format=jpg&name=small",
     },
   ],
 ];
