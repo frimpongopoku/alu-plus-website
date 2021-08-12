@@ -7,6 +7,13 @@ import PageTitle from "../../shared/components/Page Title/PageTitle";
 import "./AboutUs.css";
 import { COURSES, IMAGE_SHELF, NUMBERS } from "./values";
 export default class AboutUs extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      imageInView:
+        "https://pbs.twimg.com/media/E2OrKTmWEAArFBw?format=jpg&name=medium",
+    };
+  }
   lefSide(params) {
     return (
       <div className="everyday-flex">
@@ -79,7 +86,7 @@ export default class AboutUs extends Component {
           <div className="row">
             <center style={{ width: "100%" }}>
               <img
-                src="https://pbs.twimg.com/media/E2OrKTmWEAArFBw?format=jpg&name=medium"
+                src={this.state.imageInView}
                 className="image-in-view"
                 alt=" alu students"
               />
@@ -93,6 +100,7 @@ export default class AboutUs extends Component {
                   className="img-item"
                   src={img.small}
                   alt="shelf media"
+                  onClick={() => this.setState({ imageInView: img.large })}
                 />
               );
             })}
