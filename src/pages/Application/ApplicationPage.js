@@ -1,10 +1,19 @@
 import React, { Component } from "react";
+import Footer from "../../shared/components/Footer/Footer";
 import Hero from "../../shared/components/Hero/Hero";
 import Navbar from "../../shared/components/Navbar/Navbar";
 import PageTitle from "../../shared/components/Page Title/PageTitle";
 import "./ApplicationPage.css";
 import { FORM } from "./values";
+
 export default class ApplicationPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      submitted: false,
+    };
+  }
+
   render() {
     return (
       <div>
@@ -34,6 +43,8 @@ export default class ApplicationPage extends Component {
                   <Dropdown {...value} />
                 </div>
               );
+
+            return <></>;
           })}
           <div className="everyday-flex" style={{ justifyContent: "flex-end" }}>
             <button
@@ -44,12 +55,28 @@ export default class ApplicationPage extends Component {
                 fontWeight: "bold",
                 marginRight: 10,
               }}
+              onClick={() => this.setState({ submitted: true, form: null })}
             >
               SEND
             </button>
           </div>
+
+          {this.state.submitted && (
+            <p
+              className="alert alert-success"
+              style={{ marginTop: 10, cursor: "pointer" }}
+              onClick={() => this.setState({ submitted: false })}
+            >
+              {" "}
+              Great, thanks for sending your details
+            </p>
+          )}
         </div>
-        <PageTitle
+
+        <Footer />
+
+        {/* -------------- DISCUSSION AREA ----------------- */}
+        {/* <PageTitle
           title="ASK US YOUR QUESTIONS"
           subtitle="The questions you ask here will be public "
         />
@@ -114,14 +141,28 @@ export default class ApplicationPage extends Component {
               </p>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     );
   }
 }
 
-const Textbox = (props) => {
-  const { type = "text", placeholder, label, style = {} } = props;
+export const Textbox = (props) => {
+  const { type = "text", placeholder, label, style = {}, textarea } = props;
+
+  if (textarea)
+    return (
+      <div className="input-container">
+        <small className="m-label">{label}</small>
+        <textarea
+          className="m-textbox"
+          type={type}
+          placeholder={placeholder}
+          style={style}
+          rows="7"
+        ></textarea>
+      </div>
+    );
   return (
     <div className="input-container">
       <small className="m-label">{label}</small>

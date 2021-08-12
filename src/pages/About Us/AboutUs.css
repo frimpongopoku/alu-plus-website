@@ -31,6 +31,7 @@
 .image-in-view {
   width: 100%;
   object-fit: cover;
+  object-position: top;
   height: 600px;
   border-radius: 8px;
 }
@@ -62,4 +63,13 @@
   color: var(--app-theme-maroon);
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.course-description {
+  margin-bottom: 20px;
+}
+
+.course-description h3 {
+  text-transform: uppercase;
+  color: var(--app-theme-blue);
 }

@@ -12,8 +12,20 @@ import Hero from "../../shared/components/Hero/Hero";
 import Navbar from "../../shared/components/Navbar/Navbar";
 import PageTitle from "../../shared/components/Page Title/PageTitle";
 import "./LandingPage.css";
-import { CORE_COURSES } from "./values";
+import { CONTACT_FORM, CORE_COURSES } from "./values";
+import { getRandomAnimationClass } from "./../../shared/utils/utils";
+import facebook from "./../../assets/media/facebook.png";
+import google from "./../../assets/media/google.png";
+import coke from "./../../assets/media/coke.png";
+import microsoft from "./../../assets/media/microsoft.png";
+import { Textbox } from "../Application/ApplicationPage";
 export default class LandingPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      submitted: false,
+    };
+  }
   render() {
     return (
       <div>
@@ -22,6 +34,8 @@ export default class LandingPage extends Component {
           title="AFRICAN LEADERSHIP UNIVERSITY"
           subtitle="Get the education that is built around the impact you want"
           skewed={false}
+          link="/about#courses"
+          // image={PAGE_DATA.backgroundImage}
         />
         <PageTitle />
 
@@ -32,7 +46,14 @@ export default class LandingPage extends Component {
                 key={index.toString()}
                 className="col-md-3 col-xs-3 col-sm-3"
               >
-                <Card title={item.name} />
+                <Card
+                  title={item.name}
+                  rootClassName={getRandomAnimationClass()}
+                  img={item.image}
+                  linkText="Read More"
+                  link={item.link}
+                  hasFooter
+                />
               </div>
             ))}
           </div>
@@ -71,9 +92,22 @@ export default class LandingPage extends Component {
 
         {/* ----------------- ONLY ALU ------ */}
 
-        <PageTitle title="ONLY AT ALU" />
+        <PageTitle title="MEET OUR PARTNERS" tag="sponsors" />
 
-        <div className="only-at-alu"></div>
+        <div className="only-at-alu everyday-flex">
+          <img
+            className="sponsor-logo"
+            src={facebook}
+            alt="social media icon"
+          />
+          <img className="sponsor-logo" src={coke} alt="social media icon" />
+          <img className="sponsor-logo" src={google} alt="social media icon" />
+          <img
+            className="sponsor-logo"
+            src={microsoft}
+            alt="social media icon"
+          />
+        </div>
 
         {/* ----------- TESTIMONIALS --------- */}
 
@@ -115,6 +149,45 @@ export default class LandingPage extends Component {
             <FontAwesomeIcon className="arrow-svg" icon={faArrowCircleLeft} />
             <FontAwesomeIcon className="arrow-svg" icon={faArrowCircleRight} />
           </div>
+        </div>
+
+        <PageTitle
+          title="CONTACT US"
+          subtitle="Send us a message"
+          tag="contact-us"
+        />
+        <div className="col-md-8 offset-md-2">
+          {CONTACT_FORM.map((field, index) => (
+            <div key={index.toString()}>
+              <Textbox {...field} />
+            </div>
+          ))}
+          <div className="everyday-flex" style={{ justifyContent: "flex-end" }}>
+            <button
+              className="btn btn-success hybrid"
+              style={{
+                padding: "15px 50px",
+                fontSize: "1.2rem",
+                fontWeight: "bold",
+                marginRight: 10,
+              }}
+              onClick={() => this.setState({ submitted: true })}
+            >
+              SEND
+            </button>
+          </div>
+
+          {this.state.submitted && (
+            <p
+              className="alert alert-success"
+              style={{ marginTop: 10, cursor: "pointer" }}
+              onClick={() => this.setState({ submitted: false })}
+            >
+              {" "}
+              Great, your message has been well received, we will get back to
+              you as soon as possible.
+            </p>
+          )}
         </div>
 
         {/* ------- FOOTER--------- */}

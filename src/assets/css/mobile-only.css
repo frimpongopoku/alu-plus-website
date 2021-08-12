@@ -198,7 +198,7 @@
 
   .row-left p,
   .row-right p {
-    font-size: 0.7rem;
+    font-size: 0.7rem !important;
   }
 
   .row-left h5,
@@ -274,7 +274,30 @@
     font-size: 1.15rem !important;
   }
 
-  .camp-left-img{ 
-    height:200px !important;
+  .camp-left-img {
+    height: 200px !important;
+  }
+
+  .gallery-shelf {
+    width: 100%;
+  }
+
+  .gallery-img {
+    margin-left: 10px !important;
+    width: 160px !important;
+    height: 150px !important;
+  }
+
+  .sponsor-logo {
+    width: 90px !important;
+    height: 70px !important;
+  }
+  .course-description h3 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .page-column {
+    padding: 0px !important;
   }
 }

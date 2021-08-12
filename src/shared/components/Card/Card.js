@@ -1,9 +1,19 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./Card.css";
 export default class Card extends Component {
   render() {
-    const { theme, img, text, title, link, linkText, hasFooter, mobile } =
-      this.props;
+    const {
+      theme,
+      img,
+      text,
+      title,
+      link,
+      linkText,
+      hasFooter,
+      mobile,
+      rootClassName,
+    } = this.props;
     if (mobile)
       return (
         <div className="mob-card">
@@ -18,18 +28,18 @@ export default class Card extends Component {
           </div>
           {hasFooter && (
             <div className="m-card-footer">
-              <a
+              <Link
                 style={{ "--action-color": theme?.actionColor || "maroon" }}
-                href={link}
+                to={link}
               >
                 {linkText}
-              </a>
+              </Link>
             </div>
           )}
         </div>
       );
     return (
-      <div className="card-container elevate-float">
+      <div className={`card-container elevate-float ${rootClassName}`}>
         <div className="card-img-container">
           <img
             className="m-card-img"
@@ -72,4 +82,5 @@ Card.defaultProps = {
   link: "#",
   linkText: "Download",
   hasFooter: false,
+  rootClassName: "",
 };

@@ -1,0 +1,54 @@
+@keyframes h-move-down {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.h-move-down-animation {
+  opacity: 0;
+  animation: h-move-down;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes open-in {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.open-in-normal {
+  opacity:0;
+  animation: open-in;
+  animation-duration: 0.5;
+  animation-fill-mode: forwards;
+  animation-delay: 0.4;
+}
+
+.open-in-slow {
+  opacity:0;
+  animation: open-in;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.8s;
+}
+
+.open-in-slowest {
+  opacity:0;
+  animation: open-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1;
+}

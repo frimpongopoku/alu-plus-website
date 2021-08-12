@@ -4,10 +4,10 @@ import { TOP_LINKS, NAV_DEFAULT_LINKS } from "./values";
 import logo from "./../../../assets/media/logo.png";
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { AboutUs, Academics, StudentLife } from "./MenuDisplays";
 import { MobileBlanket, MobileNav, MobileSideBar } from "./mobile/MobileNav";
-
-export default class Navbar extends Component {
+import { withRouter } from "react-router";
+import { HashLink as Link } from "react-router-hash-link";
+class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,6 +18,9 @@ export default class Navbar extends Component {
     };
     this.showDropdown = this.showDropdown.bind(this);
   }
+
+
+  
 
   showDropdown(e, params) {
     e.preventDefault();
@@ -50,21 +53,21 @@ export default class Navbar extends Component {
           <div className="top-nav">
             <div className="right-blue-menu">
               {TOP_LINKS.map((link, index) => (
-                <a
-                  href={link.url}
+                <Link
+                  to={link.url}
                   key={index.toString()}
                   className="top-bar-link"
                 >
                   {" "}
                   {link.name}
-                </a>
+                </Link>
               ))}
             </div>
 
             <div className="top-creators">
-              <a href="#" className="top-bar-link">
-                About Creators
-              </a>
+              <Link to="/creators" className="top-bar-link">
+                AUTHORS
+              </Link>
             </div>
           </div>
 
@@ -76,6 +79,7 @@ export default class Navbar extends Component {
             toggleSidebar={(value) => {
               this.setState({ showPhoneSideBar: value });
             }}
+            goHome={() => this.props.history.push("/")}
           />
           <div className="real-navbar elevate-1 vanish-on-phone">
             <div className="nav-logo">
@@ -83,6 +87,8 @@ export default class Navbar extends Component {
                 className=""
                 style={{ height: 120, marginTop: -12 }}
                 src={logo}
+                onClick={() => this.props.history.push("/")}
+                alt="media"
               />
             </div>
 
@@ -90,8 +96,8 @@ export default class Navbar extends Component {
               {NAV_DEFAULT_LINKS.map((item, index) => (
                 <div key={index.toString()}>
                   {item.hasChildren ? (
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       className="menu-item"
                       onClick={(e) =>
                         this.showDropdown(e, {
@@ -102,17 +108,22 @@ export default class Navbar extends Component {
                       }
                     >
                       {item.name}{" "}
-                    </a>
+                    </Link>
                   ) : (
-                    <a className="menu-item" href={item.link}>
+                    <Link className="menu-item" to={item.link}>
                       {item.name}{" "}
-                    </a>
+                    </Link>
                   )}
                 </div>
               ))}
             </div>
 
-            <button className="nav-apply">
+            <button
+              className="nav-apply"
+              onClick={() => {
+                this.props.history.push("/apply");
+              }}
+            >
               Apply Now <FontAwesomeIcon icon={faLongArrowAltRight} />
             </button>
           </div>
@@ -166,3 +177,5 @@ export default class Navbar extends Component {
     );
   }
 }
+
+export default withRouter(Navbar);

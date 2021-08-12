@@ -1,15 +1,9 @@
 export const QUICK_LINKS = [
+  { name: "Apply", url: "/apply" },
+  { name: "Academics", url: "/academics" },
   { name: "Campus", url: "#" },
-
-  { name: "News", url: "#" },
-
-  { name: "Student Life", url: "#" },
-
-  { name: "Patners", url: "#" },
-
-  { name: "Programs", url: "#" },
-
-  { name: "Admission", url: "#" },
-
-  { name: "Academics", url: "#" },
+  { name: "Contact US", url: "/#contact-us" },
+  { name: "Patners", url: "/#sponsors" },
+  { name: "Programs", url: "/about#courses" },
+  { name: "Student Life", url: "/campus/mu" },
 ];

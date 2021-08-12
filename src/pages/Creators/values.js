@@ -1,7 +1,12 @@
+import pongo from "./../../assets/media/frim.jpg";
+import jeff from "./../../assets/media/jeff.jpeg";
+import miseda from "./../../assets/media/miseda.jpeg";
+import stanley from "./../../assets/media/stano.jpeg";
+
 export const TEAM = [
   {
     name: "Frimpong Opoku Agemang",
-    img: "https://via.placeholder.com/300",
+    img: pongo,
     country: (
       <span>
         <span style={{ color: "red" }}>GH</span>
@@ -32,7 +37,7 @@ export const TEAM = [
   },
   {
     name: "Stanley Olajide Ajao",
-    img: "https://via.placeholder.com/300",
+    img: stanley,
     country: (
       <span>
         <span style={{ color: "green" }}>NI</span>
@@ -63,7 +68,7 @@ export const TEAM = [
   },
   {
     name: "Jeffrey Obumneme Izuorah",
-    img: "https://via.placeholder.com/300",
+    img: jeff,
     country: (
       <span>
         <span style={{ color: "green" }}>NI</span>
@@ -94,7 +99,7 @@ export const TEAM = [
   },
   {
     name: "Alex Miseda Mumbo",
-    img: "https://via.placeholder.com/300",
+    img: miseda,
     country: (
       <span>
         <span style={{ color: "black" }}>KE</span>

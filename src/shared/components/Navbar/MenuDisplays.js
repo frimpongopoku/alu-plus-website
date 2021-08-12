@@ -1,6 +1,8 @@
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { Component } from "react";
+import React from "react";
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import MUImage from "./../../../assets/media/alu-mauri.jpeg";
 import RWImage from "./../../../assets/media/alu-rwanda.jpeg";
 import { ABOUT_US_LINKS, ACADEMICS_LINKS, STUDENT_LIFE_LINKS } from "./values";
@@ -9,7 +11,7 @@ export const StudentLife = () => {
     <>
       {/* --------------- MAURITIUS ----------- */}
       <div className="image-menu-card">
-        <img alt="menu-image" src={MUImage} />
+        <img alt="media" src={MUImage} />
         <h6
           style={{
             margin: "11px 3px",
@@ -24,17 +26,17 @@ export const StudentLife = () => {
           Experience the Island while shaping <br />
           Africa Up.
         </p>
-        <a href="#">
+        <Link to="/campus/mu">
           See more{" "}
           <FontAwesomeIcon
             style={{ marginLeft: 5 }}
             icon={faLongArrowAltRight}
           />
-        </a>
+        </Link>
       </div>
       {/* -------------- RWANDA ------------------ */}
       <div className="image-menu-card">
-        <img alt="menu-image" src={RWImage} />
+        <img  src={RWImage} alt="medai" />
         <h6
           style={{
             margin: "11px 3px",
@@ -49,28 +51,28 @@ export const StudentLife = () => {
           Feast with Paul Kagame, while you straighten out <br />
           Africa's short comings.
         </p>
-        <a href="#">
+        <Link to="/campus/rw">
           See more{" "}
           <FontAwesomeIcon
             style={{ marginLeft: 5 }}
             icon={faLongArrowAltRight}
           />
-        </a>
+        </Link>
       </div>
 
       <div className="normal-menu-blanket-column">
         {STUDENT_LIFE_LINKS.map((link, index) => (
-          <a
+          <Link
             key={index.toString()}
             className="student-life-link"
-            href={link.link}
+            to={link.link}
           >
             {link.name}
             <FontAwesomeIcon
               style={{ marginLeft: 5 }}
               icon={faLongArrowAltRight}
             />
-          </a>
+          </Link>
         ))}
       </div>
     </>
@@ -86,17 +88,17 @@ export const Academics = () => {
             {list.groupName}
           </p>
           {list.links.map((link, ind) => (
-            <a
+            <Link
               className="student-life-link"
               key={ind.toString()}
-              href={link.link}
+              to={link.link}
             >
               {link.name}
               <FontAwesomeIcon
                 style={{ marginLeft: 5 }}
                 icon={faLongArrowAltRight}
               />
-            </a>
+            </Link>
           ))}
         </div>
       ))}
@@ -112,18 +114,18 @@ export const AboutUs = () => {
             {list.groupName}
           </p>
           {list.links.map((link, ind) => (
-            <a
+            <Link
               key={ind.toString()}
               style={{ textTransform: "capitalize" }}
               className="student-life-link"
-              href={link.link}
+              to={link.link}
             >
               {link.name}
               <FontAwesomeIcon
                 style={{ marginLeft: 5 }}
                 icon={faLongArrowAltRight}
               />
-            </a>
+            </Link>
           ))}
         </div>
       ))}

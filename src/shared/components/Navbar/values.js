@@ -1,50 +1,52 @@
 import { AboutUs, Academics, StudentLife } from "./MenuDisplays";
 
 export const TOP_LINKS = [
-  { name: "Donate", url: "#" },
+  { name: "Contact", url: "/#contact-us" },
 
-  { name: "Gallery", url: "#" },
+  { name: "Gallery", url: "/gallery" },
 
-  { name: "Staff", url: "#" },
+  { name: "Staff", url: "/gallery#staff" },
 ];
 
 export const STUDENT_LIFE_LINKS = [
-  { name: " What do people say about us? ", link: "#" },
-  { name: " Student Activities ", link: "#" },
-  { name: " Life After ALU", link: "#" },
+  { name: " What do people say about us? ", link: "/#testimonials" },
+  { name: " Student Activities ", link: "/gallery#student-activities" },
+  { name: " Leave an advice to incoming students", link: "/campus/mu#advice" },
 ];
 
 export const ACADEMICS_LINKS = [
   {
     groupName: "Academic Calendar  ",
-    links: [{ name: "Academic Calendar", link: "#" }],
+    links: [{ name: "Academic Calendar", link: "/academics" }],
   },
   {
     groupName: " Core Courses ",
     links: [
-      { name: "Academic Calendar", link: "#" },
-      { name: "Entrpreneurial Leadership", link: "#" },
-      { name: " Data & Decisions", link: "#" },
-      { name: " Project Management", link: "#" },
+      { name: "Entrpreneurial Leadership", link: "/about#el" },
+      { name: " Data & Decisions", link: "/about#DD" },
+      { name: " Project Management", link: "/about#projects" },
+      { name: " Communication For Impact", link: "/about#cfi" },
     ],
   },
   {
     groupName: "ALC Mauritius",
+    url: "mu",
     links: [
-      { name: "Computing", link: "#" },
-      { name: " Engeneering Studies", link: "#" },
-      { name: " Social Sciences", link: "#" },
-      { name: " Business Management", link: "#" },
+      { name: "Computing", link: "/about#computing" },
+      { name: " Engeneering Studies", link: "/about#engineering" },
+      { name: " Social Sciences", link: "/about#social-sciences" },
+      { name: " Business Management", link: "/about#business" },
     ],
   },
 
   {
     groupName: "ALU Rwanda",
+    url: "/campus/rw",
     links: [
-      { name: "Global Challenges", link: "#" },
-      { name: " Computer Science", link: "#" },
-      { name: " Business Management", link: "#" },
-      { name: " Social Sciences", link: "#" },
+      { name: "Global Challenges", link: "/about#gc" },
+      { name: " Computer Science", link: "/about#computing" },
+      { name: " Business Management", link: "/about#business" },
+      { name: " Social Sciences", link: "/about#social-sciences" },
     ],
   },
 ];
@@ -53,26 +55,24 @@ export const ABOUT_US_LINKS = [
   {
     groupName: "Advantage",
     links: [
-      { name: "The ALU Advantage", link: "#" },
-      { name: " Our Mission", link: "#" },
-      { name: " Life After ALU", link: "#" },
-      { name: " Social Sciences", link: "#" },
+      { name: "The ALU Advantage", link: "/about" },
+      { name: " Our Mission", link: "/about#hubs" },
+      { name: " Life After ALU", link: "/gallery" },
     ],
   },
   {
     groupName: "Meet US",
     links: [
-      { name: "The Staff", link: "#" },
-      { name: " Work @ALU", link: "#" },
-      { name: " The Founding Fathers", link: "#" },
+      { name: "The Staff", link: "/gallery#staff" },
+      { name: " The Founders", link: "/gallery#founders" },
     ],
   },
 
   {
     groupName: "Patnerships",
     links: [
-      { name: "ALU Partners", link: "#" },
-      { name: " Meet the creators of this platform", link: "#" },
+      { name: "ALU Partners", link: "/#sponsors" },
+      { name: " Meet the creators of this platform", link: "/creators" },
     ],
   },
 ];
@@ -80,12 +80,12 @@ export const ABOUT_US_LINKS = [
 export const NAV_DEFAULT_LINKS = [
   {
     id: "home",
-    link: "#",
+    link: "/",
     name: "Home",
   },
   {
     id: "academics",
-    link: "#",
+    link: "academics",
     hasChildren: true,
     name: "Academics",
     jsx: Academics,
@@ -105,7 +105,7 @@ export const NAV_DEFAULT_LINKS = [
   },
   {
     id: "contact",
-    link: "#testimonials",
+    link: "/#contact-us",
     name: "Contact",
   },
 ];
