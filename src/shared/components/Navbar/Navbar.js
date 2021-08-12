@@ -19,9 +19,6 @@ class Navbar extends Component {
     this.showDropdown = this.showDropdown.bind(this);
   }
 
-
-  
-
   showDropdown(e, params) {
     e.preventDefault();
     if (!params) return;
@@ -85,7 +82,7 @@ class Navbar extends Component {
             <div className="nav-logo">
               <img
                 className=""
-                style={{ height: 120, marginTop: -12 }}
+                style={{ height: 90, marginTop: -12 }}
                 src={logo}
                 onClick={() => this.props.history.push("/")}
                 alt="media"

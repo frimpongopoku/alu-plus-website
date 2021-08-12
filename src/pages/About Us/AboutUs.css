@@ -72,4 +72,5 @@
 .course-description h3 {
   text-transform: uppercase;
   color: var(--app-theme-blue);
+  font-size: 1.2rem;
 }

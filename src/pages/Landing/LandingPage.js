@@ -78,7 +78,7 @@ export default class LandingPage extends Component {
               </h1>
               <h5
                 className="land-h5"
-                style={{ color: "var(--app-theme-blue)" }}
+                style={{ color: "var(--app-theme-blue)", textAlign: "center" }}
               >
                 Most Innovative Company
               </h5>

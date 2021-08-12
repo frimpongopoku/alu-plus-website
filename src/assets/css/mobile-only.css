@@ -107,6 +107,7 @@
 
   .landing-testimonials-container {
     height: auto !important;
+    margin-bottom: 50px;
   }
 
   .l-test-card {

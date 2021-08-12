@@ -102,12 +102,14 @@
 }
 
 .footer-about-us {
+  font-size: 0.9rem;
   color: whitesmoke;
   text-align: justify;
 }
 .footer-column-title {
   width: 100%;
-  color: white;
+  color: #fdbcbc;
+  font-size: 1rem;
 }
 
 .footer-link {
@@ -115,7 +117,7 @@
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  font-size: 1.1rem;
+  font-size: 0.85rem;
 }
 .footer-link:hover {
   color: orange;
@@ -135,4 +137,5 @@
 .footer-add p,
 .footer-add h6 {
   color: white;
+  font-size: 0.9rem;
 }
