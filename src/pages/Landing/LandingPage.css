@@ -13,7 +13,7 @@
 
 .only-at-alu {
   padding: 10%;
-  height: 760px;
+  height: 530px;
   /* background: var(--app-theme-blue); */
   background: #fff4f4;
   width: 100%;
@@ -49,7 +49,7 @@
   -webkit-box-shadow: 14px 9px 13px 7px #d8d8d894;
 }
 .l-test-card p {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   color: #6d6d6d;
 }
 

@@ -1,5 +1,5 @@
 .m-label {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   color: black;
   margin-bottom: 12px;
   text-transform: capitalize;
@@ -13,13 +13,13 @@
   width: 100%;
   border: solid 2px #d6d6d6;
   outline: 0;
-  padding: 15px 25px;
-  font-size: 1.2rem;
+  padding: 9px 15px;
+  font-size: 0.9rem;
 }
 
 .custom-select-container {
   width: 100%;
-  padding: 15px 30px;
+  padding: 9px 10px;
   border: solid 2px #d6d6d6;
 }
 
@@ -71,7 +71,7 @@
   resize: none;
   width: 100%;
   margin-bottom: 10px;
-  border-radius:7px;
+  border-radius: 7px;
 }
 
 .m-textarea:focus {

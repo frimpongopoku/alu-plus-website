@@ -8,11 +8,9 @@ import PageTitle from "../../shared/components/Page Title/PageTitle";
 import "./CampusPage.css";
 import { PICTURES, POLICIES } from "./values";
 import athena from "./../../assets/media/athena.jpeg";
-// var disqus_config = () => {
-//   this.page.url = "/apply";
-//   this.page.identifier = "application-page";
-// };
+
 export default class CampusPage extends Component {
+ 
   initDisqus() {
     var d = document,
       s = d.createElement("script");

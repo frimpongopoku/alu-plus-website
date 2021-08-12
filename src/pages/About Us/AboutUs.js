@@ -5,8 +5,15 @@ import Navbar from "../../shared/components/Navbar/Navbar";
 import PageRow from "../../shared/components/Page Row/PageRow";
 import PageTitle from "../../shared/components/Page Title/PageTitle";
 import "./AboutUs.css";
-import { COURSES, IMAGE_SHELF } from "./values";
+import { COURSES, IMAGE_SHELF, NUMBERS } from "./values";
 export default class AboutUs extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      imageInView:
+        "https://pbs.twimg.com/media/E2OrKTmWEAArFBw?format=jpg&name=medium",
+    };
+  }
   lefSide(params) {
     return (
       <div className="everyday-flex">
@@ -79,7 +86,7 @@ export default class AboutUs extends Component {
           <div className="row">
             <center style={{ width: "100%" }}>
               <img
-                src="https://pbs.twimg.com/media/E2OrKTmWEAArFBw?format=jpg&name=medium"
+                src={this.state.imageInView}
                 className="image-in-view"
                 alt=" alu students"
               />
@@ -93,6 +100,7 @@ export default class AboutUs extends Component {
                   className="img-item"
                   src={img.small}
                   alt="shelf media"
+                  onClick={() => this.setState({ imageInView: img.large })}
                 />
               );
             })}
@@ -103,24 +111,17 @@ export default class AboutUs extends Component {
 
         <PageTitle title="WHERE WE ARE NOW" />
         <div className="col-md-8 offset-md-2">
-          <div className="number-tray">
-            {[1, 2, 3].map((img, index) => (
-              <div key={index.toString()} className="tray-item">
-                <p className="tray-number">568+</p>
+          {NUMBERS.map((tray, index) => (
+            <div className="number-tray" key={index.toString()}>
+              {tray.map((item, ind) => (
+                <div key={ind.toString()} className="tray-item">
+                  <p className="tray-number">{item.number}+</p>
 
-                <span>FEMALES</span>
-              </div>
-            ))}
-          </div>
-          <div className="number-tray">
-            {[1, 2, 3].map((img, index) => (
-              <div key={index.toString()} className="tray-item">
-                <p className="tray-number">568+</p>
-
-                <span>FEMALES</span>
-              </div>
-            ))}
-          </div>
+                  <span>{item.name}</span>
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
         {/* ------------------ COURSE OVERVIEW --------------- */}
 

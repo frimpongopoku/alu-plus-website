@@ -44,7 +44,9 @@ export default class Creators extends Component {
             {params.country}
           </div>
         </div>
-        <p className="member-bio">{params.bio}</p>
+        <p className="member-bio" style={{ textAlign: "justify" }}>
+          {params.bio}
+        </p>
       </div>
     );
   }
