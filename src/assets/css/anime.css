@@ -19,7 +19,7 @@
 }
 
 @keyframes open-in {
-  from {
+  from { 
     transform: scale(0.8);
     opacity: 0;
   }
