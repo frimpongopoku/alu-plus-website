@@ -5,7 +5,7 @@ import Navbar from "../../shared/components/Navbar/Navbar";
 import PageRow from "../../shared/components/Page Row/PageRow";
 import PageTitle from "../../shared/components/Page Title/PageTitle";
 import "./AboutUs.css";
-import { COURSES, IMAGE_SHELF } from "./values";
+import { COURSES, IMAGE_SHELF, NUMBERS } from "./values";
 export default class AboutUs extends Component {
   lefSide(params) {
     return (
@@ -103,24 +103,17 @@ export default class AboutUs extends Component {
 
         <PageTitle title="WHERE WE ARE NOW" />
         <div className="col-md-8 offset-md-2">
-          <div className="number-tray">
-            {[1, 2, 3].map((img, index) => (
-              <div key={index.toString()} className="tray-item">
-                <p className="tray-number">568+</p>
+          {NUMBERS.map((tray, index) => (
+            <div className="number-tray" key={index.toString()}>
+              {tray.map((item, ind) => (
+                <div key={ind.toString()} className="tray-item">
+                  <p className="tray-number">{item.number}+</p>
 
-                <span>FEMALES</span>
-              </div>
-            ))}
-          </div>
-          <div className="number-tray">
-            {[1, 2, 3].map((img, index) => (
-              <div key={index.toString()} className="tray-item">
-                <p className="tray-number">568+</p>
-
-                <span>FEMALES</span>
-              </div>
-            ))}
-          </div>
+                  <span>{item.name}</span>
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
         {/* ------------------ COURSE OVERVIEW --------------- */}
 

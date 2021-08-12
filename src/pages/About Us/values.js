@@ -222,3 +222,34 @@ export const IMAGE_SHELF = [
     large: "https://pbs.twimg.com/media/E2OrKdEX0AIR_2I?format=jpg&name=medium",
   },
 ];
+
+export const NUMBERS = [
+  [
+    {
+      name: "Females",
+      number: 667,
+    },
+    {
+      name: "Males",
+      number: 167,
+    },
+    {
+      name: "Graduates",
+      number: 1267,
+    },
+  ],
+  [
+    {
+      name: "Companies",
+      number: 403,
+    },
+    {
+      name: "Sponsors",
+      number: 223,
+    },
+    {
+      name: "Startups",
+      number: 552,
+    },
+  ],
+];
