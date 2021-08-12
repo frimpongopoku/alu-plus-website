@@ -20,6 +20,12 @@ import coke from "./../../assets/media/coke.png";
 import microsoft from "./../../assets/media/microsoft.png";
 import { Textbox } from "../Application/ApplicationPage";
 export default class LandingPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      submitted: false,
+    };
+  }
   render() {
     return (
       <div>
@@ -89,10 +95,18 @@ export default class LandingPage extends Component {
         <PageTitle title="MEET OUR PARTNERS" tag="sponsors" />
 
         <div className="only-at-alu everyday-flex">
-          <img className="sponsor-logo" src={facebook} alt="social media icon"/>
-          <img className="sponsor-logo" src={coke} alt="social media icon"/>
-          <img className="sponsor-logo" src={google} alt="social media icon"/>
-          <img className="sponsor-logo" src={microsoft} alt="social media icon"/>
+          <img
+            className="sponsor-logo"
+            src={facebook}
+            alt="social media icon"
+          />
+          <img className="sponsor-logo" src={coke} alt="social media icon" />
+          <img className="sponsor-logo" src={google} alt="social media icon" />
+          <img
+            className="sponsor-logo"
+            src={microsoft}
+            alt="social media icon"
+          />
         </div>
 
         {/* ----------- TESTIMONIALS --------- */}
@@ -157,10 +171,23 @@ export default class LandingPage extends Component {
                 fontWeight: "bold",
                 marginRight: 10,
               }}
+              onClick={() => this.setState({ submitted: true })}
             >
               SEND
             </button>
           </div>
+
+          {this.state.submitted && (
+            <p
+              className="alert alert-success"
+              style={{ marginTop: 10, cursor: "pointer" }}
+              onClick={() => this.setState({ submitted: false })}
+            >
+              {" "}
+              Great, your message has been well received, we will get back to
+              you as soon as possible.
+            </p>
+          )}
         </div>
 
         {/* ------- FOOTER--------- */}

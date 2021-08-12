@@ -7,6 +7,13 @@ import "./ApplicationPage.css";
 import { FORM } from "./values";
 
 export default class ApplicationPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      submitted: false,
+    };
+  }
+
   render() {
     return (
       <div>
@@ -48,10 +55,22 @@ export default class ApplicationPage extends Component {
                 fontWeight: "bold",
                 marginRight: 10,
               }}
+              onClick={() => this.setState({ submitted: true, form: null })}
             >
               SEND
             </button>
           </div>
+
+          {this.state.submitted && (
+            <p
+              className="alert alert-success"
+              style={{ marginTop: 10, cursor: "pointer" }}
+              onClick={() => this.setState({ submitted: false })}
+            >
+              {" "}
+              Great, thanks for sending your details
+            </p>
+          )}
         </div>
 
         <Footer />
