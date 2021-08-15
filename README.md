@@ -6,7 +6,7 @@
 
 ## Contributors
 
-- Alex Miseda
+- <a href="https://github.com/Miseda">Alex Miseda</a>
 - Frimpong Opoku Agyemang
 - Jefferey Obumneme Izuorah
 - Stanley Olajide Adjao
