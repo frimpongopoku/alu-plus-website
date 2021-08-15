@@ -76,7 +76,6 @@ class Creators extends Component {
                     width: "100%",
                     height: "400px",
                     position: "relative",
-                    marginBottom: 20,
                     marginBottom: "10%",
                   }}
                 >

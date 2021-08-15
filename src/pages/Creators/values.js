@@ -52,8 +52,8 @@ export const TEAM = [
   cursus ullamcorper. Amet lectus pretium sit iaculis. Purus elit leo eu
  `,
     coords: {
-      lat: 6.527540996136082,
-      lng: 3.3645296768504998,
+      lat: 6.446016802013544,
+      lng: 3.263369210106344,
     },
   },
   {
@@ -78,8 +78,8 @@ export const TEAM = [
   dolor tortor viverra est lorem. Pellentesque hendrerit tempor laoreet
  .`,
     coords: {
-      lat: 6.522284470999131,
-      lng: 3.3692705334194493,
+      lat: 6.461291905662559,
+      lng: 3.4310635397144114,
     },
   },
   {
@@ -106,8 +106,8 @@ export const TEAM = [
   dolor tortor viverra est lorem. Pellentesque hendrerit tempor laoreet
 `,
     coords: {
-      lat: -1.2925676969246749,
-      lng: 36.813405814044984,
+      lat: -1.1815823742669112,
+      lng: 36.82978989526591,
     },
   },
 ];

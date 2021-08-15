@@ -7,7 +7,12 @@ export const MobileNav = (props) => {
   return (
     <div className="elevate-float mobile-nav-main-container vanish-on-pc">
       <div style={{ flex: "4" }}>
-        <img className="mobile-nav-logo" src={logo} onClick={() => goHome()} alt="media" />
+        <img
+          className="mobile-nav-logo"
+          src={logo}
+          onClick={() => goHome()}
+          alt="media"
+        />
       </div>
 
       <div
@@ -28,7 +33,7 @@ export const MobileNav = (props) => {
 export const MobileSideBar = (props) => {
   const { showBlanket, toggled, toggleSidebar } = props;
   return (
-    <div className="mobile-sidebar elevate-float">
+    <div className="mobile-sidebar elevate-float come-from-left">
       <div
         style={{
           display: "flex",

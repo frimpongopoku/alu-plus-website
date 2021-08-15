@@ -128,7 +128,7 @@ class Navbar extends Component {
           {/* ------ MOBILE SIDEBAR COMPONENT --------- */}
           {showPhoneSideBar && (
             <>
-              <div className="phone-ghost"></div>
+              <div className="phone-ghost open-in-normal"></div>
               <MobileSideBar
                 showBlanket={this.showDropdown}
                 toggled={this.state.showPhoneSideBar}

@@ -22,7 +22,7 @@ export const ACADEMICS_LINKS = [
   {
     groupName: " Core Courses ",
     links: [
-      { name: "Entrpreneurial Leadership", link: "/about#el" },
+      { name: "Entrepreneurial Leadership", link: "/about#el" },
       { name: " Data & Decisions", link: "/about#DD" },
       { name: " Project Management", link: "/about#projects" },
       { name: " Communication For Impact", link: "/about#cfi" },
@@ -33,7 +33,7 @@ export const ACADEMICS_LINKS = [
     url: "mu",
     links: [
       { name: "Computing", link: "/about#computing" },
-      { name: " Engeneering Studies", link: "/about#engineering" },
+      { name: " Engineering Studies", link: "/about#engineering" },
       { name: " Social Sciences", link: "/about#social-sciences" },
       { name: " Business Management", link: "/about#business" },
     ],

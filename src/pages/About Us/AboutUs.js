@@ -7,6 +7,7 @@ import PageTitle from "../../shared/components/Page Title/PageTitle";
 import "./AboutUs.css";
 import "./../Campus Page/CampusPage.css";
 import { COURSES, IMAGE_SHELF, NUMBERS } from "./values";
+import { getRandomAnimationClass } from "../../shared/utils/utils";
 export default class AboutUs extends Component {
   constructor(props) {
     super(props);
@@ -151,7 +152,7 @@ export default class AboutUs extends Component {
                       <img
                         key={ind.toString()}
                         src={image.img}
-                        className="housing-image"
+                        className={`housing-image ${getRandomAnimationClass()}`}
                         style={{ objectFit: "contain" }}
                         alt="students"
                       />
