@@ -6,6 +6,8 @@
 
 ## Contributors
 
+
+- <a href="https://github.com/Jeffreywastaken">Jeffrey Obumneme Izuorah</a>
 - <a href="https://github.com/Miseda">Alex Miseda</a>
 - <a  href="https://github.com/frimpongopoku">Frimpong Opoku Agyemang</a>
 - Jefferey Obumneme Izuorah
