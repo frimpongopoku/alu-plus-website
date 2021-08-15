@@ -8,5 +8,5 @@
 
 - Alex Miseda
 - Frimpong Opoku Agyemang
-- Jefferey Obumneme Izuorah
+- <a href="https://github.com/Jeffreywastaken">Jeffrey Obumneme Izuorah</a>
 - Stanley Olajide Adjao
