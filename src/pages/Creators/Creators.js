@@ -4,9 +4,11 @@ import Hero from "../../shared/components/Hero/Hero";
 import Navbar from "../../shared/components/Navbar/Navbar";
 import PageRow from "../../shared/components/Page Row/PageRow";
 import PageTitle from "../../shared/components/Page Title/PageTitle";
+import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
+
 import "./Creators.css";
 import { TEAM } from "./values";
-export default class Creators extends Component {
+class Creators extends Component {
   left(params = {}) {
     return (
       <div className="everyday-flex">
@@ -38,7 +40,6 @@ export default class Creators extends Component {
             style={{
               flex: "6",
               justifyContent: "flex-end",
-              // flexDirection: "row-reverse",
             }}
           >
             {params.country}
@@ -59,14 +60,38 @@ export default class Creators extends Component {
         <PageTitle title="Meet The Team" />
 
         {TEAM.reverse().map((mem, ind) => (
-          <div key={ind.toString()} style={{ marginBottom: "8%" }}>
-            <PageRow
-              leftSplit={3}
-              rightSplit={9}
-              left={this.left({ color: mem.imgColor, img: mem.img })}
-              right={this.right(mem)}
-            />
-          </div>
+          <>
+            <div key={ind.toString()} style={{ marginBottom: "1%" }}>
+              <PageRow
+                leftSplit={3}
+                rightSplit={9}
+                left={this.left({ color: mem.imgColor, img: mem.img })}
+                right={this.right(mem)}
+              />
+            </div>
+            <div className="col-md-8 offset-md-2">
+              {mem.coords && (
+                <div
+                  style={{
+                    width: "100%",
+                    height: "400px",
+                    position: "relative",
+                    marginBottom: 20,
+                    marginBottom: "10%",
+                  }}
+                >
+                  <p>{mem.name} lives here</p>
+                  <Map
+                    zoom={14}
+                    google={window.google}
+                    initialCenter={mem.coords}
+                  >
+                    <Marker name={"Current location"} />
+                  </Map>
+                </div>
+              )}
+            </div>
+          </>
         ))}
 
         <Footer />
@@ -74,3 +99,7 @@ export default class Creators extends Component {
     );
   }
 }
+
+export default GoogleApiWrapper({
+  apiKey: "AIzaSyDSczU-xULK_7PdU8-HqwGjc-xvjaq2BhI",
+})(Creators);

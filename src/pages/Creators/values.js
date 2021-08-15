@@ -28,6 +28,10 @@ export const TEAM = [
   porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
   egestas maecenas scelerisque imperdiet aenean elementum tortor. Lacus
   porta.`,
+    coords: {
+      lat: 5.625785907660747,
+      lng: -0.2945287579493888,
+    },
   },
   {
     name: "Stanley Olajide Ajao",
@@ -47,6 +51,10 @@ export const TEAM = [
   sed quam semper. Auctor amet tortor sed vitae. A mattis ullamcorper
   cursus ullamcorper. Amet lectus pretium sit iaculis. Purus elit leo eu
  `,
+    coords: {
+      lat: 6.527540996136082,
+      lng: 3.3645296768504998,
+    },
   },
   {
     name: "Jeffrey Obumneme Izuorah",
@@ -69,6 +77,10 @@ export const TEAM = [
   turpis ultrices ornare nullam tortor. Cras sit lectus habitant turpis
   dolor tortor viverra est lorem. Pellentesque hendrerit tempor laoreet
  .`,
+    coords: {
+      lat: 6.522284470999131,
+      lng: 3.3692705334194493,
+    },
   },
   {
     name: "Alex Miseda Mumbo",
@@ -93,5 +105,9 @@ export const TEAM = [
   turpis ultrices ornare nullam tortor. Cras sit lectus habitant turpis
   dolor tortor viverra est lorem. Pellentesque hendrerit tempor laoreet
 `,
+    coords: {
+      lat: -1.2925676969246749,
+      lng: 36.813405814044984,
+    },
   },
 ];
