@@ -58,7 +58,7 @@ export default class Creators extends Component {
 
         <PageTitle title="Meet The Team" />
 
-        {TEAM.map((mem, ind) => (
+        {TEAM.reverse().map((mem, ind) => (
           <div key={ind.toString()} style={{ marginBottom: "8%" }}>
             <PageRow
               leftSplit={3}
