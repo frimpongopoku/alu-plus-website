@@ -52,7 +52,11 @@ export default class Hero extends Component {
     } = this.props;
 
     return (
-      <div style={{ position: "relative" }} className="root-hero" ref={this.gbemi}>
+      <div
+        style={{ position: "relative" }}
+        className="root-hero h-move-down-animation"
+        ref={this.gbemi}
+      >
         <div className="hero-sizing hero-background">
           <img
             style={imageStyle}

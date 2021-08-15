@@ -8,9 +8,9 @@ import PageTitle from "../../shared/components/Page Title/PageTitle";
 import "./CampusPage.css";
 import { PICTURES, POLICIES } from "./values";
 import athena from "./../../assets/media/athena.jpeg";
+import { getRandomAnimationClass } from "../../shared/utils/utils";
 
 export default class CampusPage extends Component {
- 
   initDisqus() {
     var d = document,
       s = d.createElement("script");
@@ -77,7 +77,7 @@ export default class CampusPage extends Component {
         <div className="col-md-8 offset-md-2">
           {PICTURES.map((item, index) => (
             <div
-              className="everyday-flex"
+              className={`everyday-flex`}
               style={{ flexWrap: "wrap" }}
               key={index.toString()}
             >
@@ -85,7 +85,7 @@ export default class CampusPage extends Component {
                 <img
                   key={ind.toString()}
                   src={image.url}
-                  className="housing-image"
+                  className={`housing-image ${getRandomAnimationClass()}`}
                   alt="students"
                 />
               ))}

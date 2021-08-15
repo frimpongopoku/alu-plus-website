@@ -5,7 +5,9 @@ import Navbar from "../../shared/components/Navbar/Navbar";
 import PageRow from "../../shared/components/Page Row/PageRow";
 import PageTitle from "../../shared/components/Page Title/PageTitle";
 import "./AboutUs.css";
+import "./../Campus Page/CampusPage.css";
 import { COURSES, IMAGE_SHELF, NUMBERS } from "./values";
+import { getRandomAnimationClass } from "../../shared/utils/utils";
 export default class AboutUs extends Component {
   constructor(props) {
     super(props);
@@ -138,6 +140,25 @@ export default class AboutUs extends Component {
               <p className="member-bio" style={{ textAlign: "justify" }}>
                 {course.text}
               </p>
+
+              {course.courses &&
+                course.courses.map((item, index) => (
+                  <div
+                    className="everyday-flex"
+                    style={{ flexWrap: "wrap" }}
+                    key={index.toString()}
+                  >
+                    {item.map((image, ind) => (
+                      <img
+                        key={ind.toString()}
+                        src={image.img}
+                        className={`housing-image ${getRandomAnimationClass()}`}
+                        style={{ objectFit: "contain" }}
+                        alt="students"
+                      />
+                    ))}
+                  </div>
+                ))}
             </div>
           ))}
         </div>
