@@ -9,4 +9,4 @@
 - Alex Miseda
 - Frimpong Opoku Agyemang
 - Jefferey Obumneme Izuorah
-- Stanley Olajide Adjao
+-  <a href="https://github.com/Stanley00011">Stanley Olajide Ajao</a>
