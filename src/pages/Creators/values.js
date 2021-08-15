@@ -5,7 +5,7 @@ import stanley from "./../../assets/media/stano.jpeg";
 
 export const TEAM = [
   {
-    name: "Frimpong Opoku Agemang",
+    name: "Frimpong Opoku Agyemang",
     img: pongo,
     country: (
       <span>
@@ -15,10 +15,11 @@ export const TEAM = [
       </span>
     ),
     imgColor: "#CEE92B",
-    bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet egestas
-  maecenas scelerisque imperdiet aenean elementum tortor. Lacus
-  malesuada cum mattis amet fusce. Maecenas ut elit, malesuada eu
-  libero, cursus dis porta et. Cras egestas pellentesque nunc elit
+    bio: `Frimpong Opoku Agyemang is a young Ghanaian who belongs to a family of 8. He lives in a small town 
+    situated in the suburbs of Ablekuma Fanmilk -- a region in the capital city of Ghana. His interest range from 
+    soccer, cooking, music and mainly technology. He intends to garner as much knowledge as possible relating to programming 
+    and how computers work, in order to become a full fledged software developer in the years to come.
+     Cras egestas pellentesque nunc elit
   turpis ultrices ornare nullam tortor. Cras sit lectus habitant turpis
   dolor tortor viverra est lorem. Pellentesque hendrerit tempor laoreet
   facilisi netus tincidunt sit blandit et. Quis orci eu imperdiet congue
@@ -26,14 +27,11 @@ export const TEAM = [
   cursus ullamcorper. Amet lectus pretium sit iaculis. Purus elit leo eu
   porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
   egestas maecenas scelerisque imperdiet aenean elementum tortor. Lacus
-  malesuada cum mattis amet fusce. Maecenas ut elit, malesuada eu
-  libero, cursus dis porta et. Cras egestas pellentesque nunc elit
-  turpis ultrices ornare nullam tortor. Cras sit lectus habitant turpis
-  dolor tortor viverra est lorem. Pellentesque hendrerit tempor laoreet
-  facilisi netus tincidunt sit blandit et. Quis orci eu imperdiet congue
-  sed quam semper. Auctor amet tortor sed vitae. A mattis ullamcorper
-  cursus ullamcorper. Amet lectus pretium sit iaculis. Purus elit leo eu
   porta.`,
+    coords: {
+      lat: 5.625785907660747,
+      lng: -0.2945287579493888,
+    },
   },
   {
     name: "Stanley Olajide Ajao",
@@ -46,25 +44,17 @@ export const TEAM = [
       </span>
     ),
     imgColor: "#CA1010",
-    bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet egestas
-  maecenas scelerisque imperdiet aenean elementum tortor. Lacus
-  malesuada cum mattis amet fusce. Maecenas ut elit, malesuada eu
-  libero, cursus dis porta et. Cras egestas pellentesque nunc elit
-  turpis ultrices ornare nullam tortor. Cras sit lectus habitant turpis
+    bio: `In his second year at the African Leadership University, Stanley is majoring in Computer Science. Interested in technology, he aspires to enhance technology in Africa by bringing it to the continent's attention. Cras egestas pellentesque nunc elit
+  turpis ultrices ornare nullam tortor.Cras sit lectus habitant turpis
   dolor tortor viverra est lorem. Pellentesque hendrerit tempor laoreet
   facilisi netus tincidunt sit blandit et. Quis orci eu imperdiet congue
   sed quam semper. Auctor amet tortor sed vitae. A mattis ullamcorper
   cursus ullamcorper. Amet lectus pretium sit iaculis. Purus elit leo eu
-  porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-  egestas maecenas scelerisque imperdiet aenean elementum tortor. Lacus
-  malesuada cum mattis amet fusce. Maecenas ut elit, malesuada eu
-  libero, cursus dis porta et. Cras egestas pellentesque nunc elit
-  turpis ultrices ornare nullam tortor. Cras sit lectus habitant turpis
-  dolor tortor viverra est lorem. Pellentesque hendrerit tempor laoreet
-  facilisi netus tincidunt sit blandit et. Quis orci eu imperdiet congue
-  sed quam semper. Auctor amet tortor sed vitae. A mattis ullamcorper
-  cursus ullamcorper. Amet lectus pretium sit iaculis. Purus elit leo eu
-  porta.`,
+ `,
+    coords: {
+      lat: 6.446016802013544,
+      lng: 3.263369210106344,
+    },
   },
   {
     name: "Jeffrey Obumneme Izuorah",
@@ -77,25 +67,20 @@ export const TEAM = [
       </span>
     ),
     imgColor: "rgba(232, 189, 39, 0.96)",
-    bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet egestas
+    bio: `Jeffrey Obumneme Izuorah, "Star boy" as many know him as, is a young nigerian sensation in video games. 
+    His love for video games has ever drawn him closer into the field of technology. In future, he intends make a 
+    mark with Africa in the video game industry. 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet egestas
   maecenas scelerisque imperdiet aenean elementum tortor. Lacus
   malesuada cum mattis amet fusce. Maecenas ut elit, malesuada eu
   libero, cursus dis porta et. Cras egestas pellentesque nunc elit
   turpis ultrices ornare nullam tortor. Cras sit lectus habitant turpis
   dolor tortor viverra est lorem. Pellentesque hendrerit tempor laoreet
-  facilisi netus tincidunt sit blandit et. Quis orci eu imperdiet congue
-  sed quam semper. Auctor amet tortor sed vitae. A mattis ullamcorper
-  cursus ullamcorper. Amet lectus pretium sit iaculis. Purus elit leo eu
-  porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-  egestas maecenas scelerisque imperdiet aenean elementum tortor. Lacus
-  malesuada cum mattis amet fusce. Maecenas ut elit, malesuada eu
-  libero, cursus dis porta et. Cras egestas pellentesque nunc elit
-  turpis ultrices ornare nullam tortor. Cras sit lectus habitant turpis
-  dolor tortor viverra est lorem. Pellentesque hendrerit tempor laoreet
-  facilisi netus tincidunt sit blandit et. Quis orci eu imperdiet congue
-  sed quam semper. Auctor amet tortor sed vitae. A mattis ullamcorper
-  cursus ullamcorper. Amet lectus pretium sit iaculis. Purus elit leo eu
-  porta.`,
+ .`,
+    coords: {
+      lat: 6.461291905662559,
+      lng: 3.4310635397144114,
+    },
   },
   {
     name: "Alex Miseda Mumbo",
@@ -108,24 +93,21 @@ export const TEAM = [
       </span>
     ),
     imgColor: "#FF8A65",
-    bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet egestas
+    bio: `Alex Miseda Mumbo, "Mandem" as many of his friends know him as, 
+     is an upcoming young talent in the Kenyan music industry. As a current second year computing student 
+     at the African Leadership University, his interests range from Soccer, programming, and mainly Music. 
+     At a young age of 21, he has successfully cemented his presence in the kenyan music industry. 
+     In future he intends to balance his love for technology and his talent for music into a mix that benefits Africa.
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet egestas
   maecenas scelerisque imperdiet aenean elementum tortor. Lacus
   malesuada cum mattis amet fusce. Maecenas ut elit, malesuada eu
   libero, cursus dis porta et. Cras egestas pellentesque nunc elit
   turpis ultrices ornare nullam tortor. Cras sit lectus habitant turpis
   dolor tortor viverra est lorem. Pellentesque hendrerit tempor laoreet
-  facilisi netus tincidunt sit blandit et. Quis orci eu imperdiet congue
-  sed quam semper. Auctor amet tortor sed vitae. A mattis ullamcorper
-  cursus ullamcorper. Amet lectus pretium sit iaculis. Purus elit leo eu
-  porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-  egestas maecenas scelerisque imperdiet aenean elementum tortor. Lacus
-  malesuada cum mattis amet fusce. Maecenas ut elit, malesuada eu
-  libero, cursus dis porta et. Cras egestas pellentesque nunc elit
-  turpis ultrices ornare nullam tortor. Cras sit lectus habitant turpis
-  dolor tortor viverra est lorem. Pellentesque hendrerit tempor laoreet
-  facilisi netus tincidunt sit blandit et. Quis orci eu imperdiet congue
-  sed quam semper. Auctor amet tortor sed vitae. A mattis ullamcorper
-  cursus ullamcorper. Amet lectus pretium sit iaculis. Purus elit leo eu
-  porta.`,
+`,
+    coords: {
+      lat: -1.1815823742669112,
+      lng: 36.82978989526591,
+    },
   },
 ];

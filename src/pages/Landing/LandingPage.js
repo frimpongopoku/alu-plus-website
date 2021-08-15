@@ -12,7 +12,7 @@ import Hero from "../../shared/components/Hero/Hero";
 import Navbar from "../../shared/components/Navbar/Navbar";
 import PageTitle from "../../shared/components/Page Title/PageTitle";
 import "./LandingPage.css";
-import { CONTACT_FORM, CORE_COURSES } from "./values";
+import { CONTACT_FORM, CORE_COURSES, STORIES } from "./values";
 import { getRandomAnimationClass } from "./../../shared/utils/utils";
 import facebook from "./../../assets/media/facebook.png";
 import google from "./../../assets/media/google.png";
@@ -24,9 +24,37 @@ export default class LandingPage extends Component {
     super(props);
     this.state = {
       submitted: false,
+      stories: STORIES,
+      story: STORIES[0],
+      storyIndex: 0,
     };
   }
+  moveToStory(next = true) {
+    const { storyIndex, stories } = this.state;
+    var story, newIndex;
+    if (next) {
+      if (storyIndex === stories.length - 1) {
+        // is the last item
+        newIndex = 0; // reset index
+        story = stories[0]; // choose the first item
+      } else {
+        newIndex = storyIndex + 1;
+        story = stories[newIndex];
+      }
+    } else {
+      if (storyIndex === 0) {
+        // if trying to go back while its on the firs titem
+        newIndex = stories.length - 1; // set the last index
+        story = stories[newIndex]; // set the last item
+      } else {
+        newIndex = storyIndex - 1;
+        story = stories[newIndex];
+      }
+    }
+    this.setState({ story, storyIndex: newIndex });
+  }
   render() {
+    const { story } = this.state;
     return (
       <div>
         <Navbar />
@@ -78,7 +106,7 @@ export default class LandingPage extends Component {
               </h1>
               <h5
                 className="land-h5"
-                style={{ color: "var(--app-theme-blue)" }}
+                style={{ color: "var(--app-theme-blue)", textAlign: "center" }}
               >
                 Most Innovative Company
               </h5>
@@ -120,20 +148,9 @@ export default class LandingPage extends Component {
                 alt="user pic"
                 className="l-test-image"
               />
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
-              </p>
+              <p>{story?.story}</p>
 
-              <h5> ~Frimpong Opoku</h5>
+              <h5> ~{story?.name}</h5>
             </div>
           </div>
 
@@ -146,8 +163,15 @@ export default class LandingPage extends Component {
               padding: 20,
             }}
           >
-            <FontAwesomeIcon className="arrow-svg" icon={faArrowCircleLeft} />
-            <FontAwesomeIcon className="arrow-svg" icon={faArrowCircleRight} />
+            <span onClick={() => this.moveToStory(false)}>
+              <FontAwesomeIcon className="arrow-svg" icon={faArrowCircleLeft} />
+            </span>
+            <span onClick={() => this.moveToStory(false)}>
+              <FontAwesomeIcon
+                className="arrow-svg"
+                icon={faArrowCircleRight}
+              />
+            </span>
           </div>
         </div>
 

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import "./Card.css";
+import { HashLink as Link } from "react-router-hash-link";
 export default class Card extends Component {
   render() {
     const {
@@ -62,12 +62,12 @@ export default class Card extends Component {
         </div>
         {hasFooter && (
           <div className="m-card-footer">
-            <a
+            <Link
               style={{ "--action-color": theme?.actionColor || "maroon" }}
-              href={link}
+              to={link}
             >
               {linkText}
-            </a>
+            </Link>
           </div>
         )}
       </div>
