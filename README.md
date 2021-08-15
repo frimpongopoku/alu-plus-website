@@ -7,6 +7,6 @@
 ## Contributors
 
 - <a href="https://github.com/Miseda">Alex Miseda</a>
-- Frimpong Opoku Agyemang
+- <a  href="https://github.com/frimpongopoku">Frimpong Opoku Agyemang</a>
 - Jefferey Obumneme Izuorah
 -  <a href="https://github.com/Stanley00011">Stanley Olajide Ajao</a>
